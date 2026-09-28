@@ -93,18 +93,19 @@ index.html?a=김치볶음밥&b=순두부찌개&d=9월%2021일
   .rh-desc{min-height:0}
 }
 body.mobile .rh-cards{grid-template-columns:1fr;gap:10px;margin-top:16px}
-body.mobile .rh-card{display:grid;grid-template-columns:44px minmax(0,1fr) auto;column-gap:12px;row-gap:2px;align-items:center;padding:14px 14px 14px 16px;border-radius:20px}
-body.mobile .rh-top{display:contents}
-body.mobile .rh-ic{grid-column:1;grid-row:1/span 2;align-self:center}
-body.mobile .rh-purpose{grid-column:2;grid-row:1;justify-self:start;font-size:12px;padding:2px 8px}
-body.mobile .rh-go{grid-column:3;grid-row:1/span 2;margin:0}
 body.mobile #roleHub{display:flex;flex-direction:column;padding:0}
 body.mobile .rh-sheet{margin-top:auto;flex:none}   /* 아래에 붙이되, 화면보다 길면 위에서부터 스크롤 */
 body.mobile .rh-sheet{border-radius:28px 28px 0 0;padding:22px 16px calc(20px + env(safe-area-inset-bottom,0))}
 body.mobile .rh-head .logo-partnership{height:22px;margin-bottom:10px}
 body.mobile .rh-head h1{font-size:24px}
 body.mobile .rh-head p{font-size:14px;margin-top:4px}
-body.mobile .rh-who{grid-column:2;grid-row:2;margin-top:4px;font-size:21px}
+/* 모바일 카드: 아이콘·화살표는 양옆에 고정, 가운데에 목적 라벨과 대상 이름 (display:contents 없이) */
+body.mobile .rh-card{display:block;position:relative;min-height:76px;padding:14px 60px 14px 76px;border-radius:20px}
+body.mobile .rh-top{display:block}
+body.mobile .rh-card .rh-ic{position:absolute;left:16px;top:50%;margin-top:-22px}
+body.mobile .rh-card .rh-go{position:absolute;right:14px;top:50%;margin-top:-16px}
+body.mobile .rh-purpose{display:inline-block;font-size:12px;padding:2px 8px}
+body.mobile .rh-who{display:block;margin-top:4px;font-size:21px}
 body.mobile .rh-desc{display:none}
 body.mobile .rh-all{margin-top:10px;padding:12px 14px;border-radius:18px}
 body.mobile .rh-all-t b{font-size:16px}
@@ -261,8 +262,6 @@ body.mobile .dtabs .tl{display:none}
 body.mobile .dtabs .ts{display:inline}
 body.mobile .mc-legend .lg-g{display:flex;flex-basis:100%}
 /* 모바일 첫 화면 카드: 줄 사이 간격을 4px 하나로 */
-body.mobile .rh-card{row-gap:4px}
-body.mobile .rh-who{margin-top:0}
 body.mobile .mc-table{min-width:800px}
 body.mobile .mc-tag{font-size:11px}
 
@@ -270,6 +269,9 @@ body.mobile .mc-tag{font-size:11px}
 .rh-mbr{display:none}
 body.mobile .rh-mbr{display:inline}
 body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
+
+/* 카드·전체 보기 안의 글자·아이콘은 터치를 받지 않게 해, 어디를 눌러도 버튼 자체가 눌리도록 */
+.rh-card *,.rh-all *{pointer-events:none}
 </style>
 <style id="road-motion-fix">
 /* Keep the road itself fixed and move only its repeating lane pattern left. */
@@ -848,6 +850,7 @@ window.RoleHub = (function () {
     applyTabs(); badges();
     hideHub();
     const R = ROLES[r];
+    try {
     if (R.hub) {
       Dash.open(R.tabs[0]);
       const S = Dash._sim;                 // 식단 설계·성과 관리는 '지금 식단 그대로'에서 시작
@@ -858,6 +861,7 @@ window.RoleHub = (function () {
       if (S.tt.beef !== undefined) Object.assign(S.tt, S.st);
       $("#rhRestart").click();       // 교육 체험을 처음(입장)부터
     }
+    } catch (err) { console.error("[RoleHub] 화면 전환 중 오류:", err); }
   }
 
   /* ── 탭 줄 스크롤 표시: 넘칠 때만 가장자리를 흐리게, 선택된 탭은 보이는 곳으로 ── */
@@ -961,8 +965,18 @@ window.RoleHub = (function () {
   /* ── 시작 ─────────────────────────────── */
   function wire() {
     const h = hub();
+    // 터치 기기에서 click 이 오지 않는 경우를 대비해, 제자리에서 손을 떼면(10px 이내) 바로 선택한다
+    let down = null, tapAt = 0;
+    h.addEventListener("pointerdown", e => { const c = e.target.closest("[data-role]"); down = c && e.pointerType !== "mouse" ? { c, x: e.clientX, y: e.clientY } : null; });
+    h.addEventListener("pointercancel", () => { down = null; });
+    h.addEventListener("pointerup", e => {
+      const d = down; down = null;
+      if (!d || e.target.closest("[data-role]") !== d.c || Math.hypot(e.clientX - d.x, e.clientY - d.y) > 10) return;
+      tapAt = Date.now(); choose(d.c.dataset.role);
+    });
     h.addEventListener("click", e => {
       e.stopPropagation();                         // 아래 교육 체험의 클릭 처리로 넘기지 않기
+      if (Date.now() - tapAt < 800) return;        // 방금 터치로 선택했으면 중복 실행하지 않기
       const c = e.target.closest("[data-role]");
       if (c) choose(c.dataset.role);
     });
@@ -1004,8 +1018,8 @@ document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;inset:
 return;
 }
 window.PAYLOAD = P;
-new Function(code)();
-window.RoleHub && RoleHub.init();   // 사용 목적 선택 화면 활성화   // engine.js → window.Engine, dash.js → window.Dash, app.js (체험 시작)
+try { new Function(code)(); } catch (e) { console.error("앱 코드 실행 오류:", e); }
+window.RoleHub && RoleHub.init();   // 앱 코드에 오류가 있어도 사용 목적 선택은 활성화   // engine.js → window.Engine, dash.js → window.Dash, app.js (체험 시작)
 })();
 </script>
 </body>
