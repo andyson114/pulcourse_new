@@ -255,6 +255,10 @@ body.rh-still .bowl,body.rh-still .on-stage,body.rh-still .mbowl{transition:none
 .rh-mbr{display:none}
 body.mobile .rh-mbr{display:inline}
 body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
+
+/* 목적 카드의 모듈 목록(메뉴 교환 · 한 달 식단 등)은 보이지 않게 한다.
+   요소와 카드 배치 구조는 그대로 두고 높이만 0으로 접는다(삭제했을 때 아이폰에서 터치가 안 된 적이 있어 구조를 바꾸지 않음) */
+.rh-mods{visibility:hidden;height:0;min-height:0;margin:0!important;padding:0!important;border:0!important;overflow:hidden}
 </style>
 <style id="road-motion-fix">
 /* Keep the road itself fixed and move only its repeating lane pattern left. */
