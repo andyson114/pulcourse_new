@@ -76,7 +76,7 @@ index.html?a=김치볶음밥&b=순두부찌개&d=9월%2021일
 .rh-go{margin-left:auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:20px;line-height:1;
   color:var(--muted);background:var(--tile);transition:background .15s,color .15s,transform .15s}
 .rh-card:hover .rh-go,.rh-card:focus-visible .rh-go,.rh-all:hover .rh-go,.rh-all:focus-visible .rh-go{background:var(--rc);color:#fff;transform:translateX(2px)}
-.rh-who{display:block;margin-top:18px;font-size:30px;line-height:1.2;font-weight:900;letter-spacing:-.03em;color:var(--text)}
+.rh-who{display:block;margin-top:18px;font-size:30px;line-height:1.2;font-weight:700;letter-spacing:-.03em;color:var(--text)}
 .rh-desc{margin-top:8px;font-size:15px;color:var(--sub);line-height:1.6;min-height:3.2em}
 .rh-mods{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
 .rh-mods span{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--sub)}
@@ -242,6 +242,14 @@ body.mobile .mc-result>div{padding:12px 14px}
 body.mobile .mc-cal{padding:14px 12px 12px}
 @media (prefers-reduced-motion:reduce){#roleHub{transition:none}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* 페이지를 처음 열 때 그릇이 화면 왼쪽 위에서 날아드는 전환을 끈다(첫 배치 뒤 RoleHub.init 에서 해제) */
+body.rh-still .bowl,body.rh-still .on-stage,body.rh-still .mbowl{transition:none!important}
+
+/* 대시보드 탭 줄: 옆으로 더 넘길 탭이 있으면 그쪽 가장자리를 살짝 흐리게 */
+#dtabs.fade-r{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}
+#dtabs.fade-l{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px);mask-image:linear-gradient(to right,transparent,#000 36px)}
+#dtabs.fade-l.fade-r{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent)}
 </style>
 <style id="road-motion-fix">
 /* Keep the road itself fixed and move only its repeating lane pattern left. */
@@ -287,7 +295,7 @@ body.mobile #dash{overflow-x:hidden}
 body.mobile .g2>div,body.mobile .dcard>div{min-width:0}
 </style>
 </head>
-<body class="s-intro blur dim">
+<body class="s-intro blur dim rh-still">
 <script>/* 첫 그리기 전에 모바일 레이아웃 여부를 정한다. app.js 의 layout() 과 같은 조건이며, 데이터를 푸는 동안 데스크톱 배치가 먼저 그려졌다가 바뀌는 흔들림을 막는다 */
 if (matchMedia("(max-width: 900px) and (orientation: portrait), (max-height: 540px)").matches) document.body.classList.add("mobile");</script>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="ciPulmuone" viewBox="0 0 519 176"><path fill="#80CC28" d="M 259.3 68 C 156.3 68 64.3 42.8 2.1 4.2 C 1.6 3.9 1.2 3.6 0.7 3.2 C 0.1 2.8 0 1.9 0.3 1.2 C 0.6 0.5 1.3 0 2.1 0.2 C 2.7 0.3 3.3 0.5 3.8 0.6 C 72.7 24 162 37.2 259.3 37.2 C 356.5 37.2 445.8 24 514.8 0.6 C 515.3 0.5 515.9 0.3 516.5 0.2 C 517.2 0 517.9 0.5 518.3 1.2 C 518.5 1.9 518.4 2.8 517.8 3.2 C 517.4 3.6 516.9 3.9 516.5 4.2 C 454.3 42.9 362.3 68 259.3 68"/><path fill="#231F20" d="M 329.4 157 C 328.6 147.9 333.3 131 345.4 129.9 C 345.6 129.9 345.9 129.9 346.1 129.9 C 353.2 130.1 354.8 136.6 355.1 140.5 C 355.9 149.4 351.1 166.7 339.2 167.7 C 339 167.7 338.7 167.7 338.5 167.8 C 331.1 167.5 329.6 160.2 329.4 157 M 346.7 121.9 C 342.2 121.9 338.7 122.5 335.4 123.8 C 322.9 128.8 316.7 144.1 317.2 156 C 317.7 168.2 325.5 175.5 338 175.7 C 345.7 175.8 352.7 172.9 357.8 167.7 C 364 161.2 367.6 151.2 367.2 141.6 C 366.7 129.2 359 121.9 346.7 121.9 M 444.5 147.6 C 446.3 139.8 451.3 134.9 453.2 133.5 C 456.1 131.5 462.7 128.4 466.7 131.5 C 467.7 132.2 468.3 133.8 468.2 135.4 C 468 138.4 465.5 141.4 461.3 143.8 C 455.5 147 449.6 147.6 446 147.7 C 445.4 147.7 444.9 147.6 444.5 147.6 M 473.4 124.4 C 471.2 123 468.1 122.1 464.9 121.9 C 464.3 121.8 463.6 121.8 462.9 121.8 C 459.3 121.8 455.4 122.5 451.6 124 C 440.4 128.6 432.7 139.9 432 152.9 C 431.6 159.5 433.4 165.2 437.1 169.4 C 440.6 173.3 445.5 175.1 450.6 175.5 C 450.6 175.5 451.6 175.6 453.2 175.6 C 456.5 175.6 464.1 175.2 469.5 170.9 C 472.3 168.7 473.1 163.7 470.9 160.9 C 470.9 160.9 470.9 160.9 470.9 160.9 C 470.9 160.9 470.9 160.9 470.9 160.9 C 470.9 160.9 463.8 166.6 455.9 167 C 454.9 166.9 453.9 166.9 452.9 166.7 C 444.4 165.2 443.8 157.1 443.8 154.9 C 444.3 154.9 444.8 154.9 445.4 154.9 C 456.8 154.9 467 151.8 472.7 146.7 C 476.3 143.4 478.5 140.4 478.9 134.8 C 479.4 127.7 473.5 124.4 473.4 124.4 M 47.7 131 C 47.7 131 53 100.8 53 100.8 C 53 100.8 55.1 100.2 59 100.2 C 59.6 100.2 60.3 100.2 61 100.2 C 68.7 100.6 77.1 104.2 74.6 116.1 C 73.5 121.1 69.9 126 65.6 128.5 C 59.4 132.1 50 131.3 47.7 131 M 61.1 91.6 C 60.4 91.6 59.7 91.6 58.9 91.6 C 48.3 91.6 41.8 93.1 41.8 93.1 L 27.6 174 L 34.7 174 C 38.1 174 40.4 172.4 41.1 168.3 C 41.7 165.2 45.8 141.7 46.1 140.2 C 48.9 140.4 51.6 140.5 54.7 140.5 C 73.9 140.4 85.4 128.4 87.6 116.5 C 90.8 99.5 76.9 91.8 61.1 91.6 M 239.8 122.5 C 230 121.7 224.4 128 220.8 133.8 C 220.4 130.1 219.2 127.3 217.3 125.4 C 215.3 123.4 212.6 122.5 209.5 122.4 C 201 122.3 195.5 127.7 191.4 135.2 C 191.4 134.9 191.5 134.6 191.5 134.3 C 192.2 129 191.9 127.1 190.3 125 C 190.3 125 188.9 122.9 184.8 123.1 C 183.3 123 181.4 123.2 179 124.1 C 180.4 125.6 180.4 128.5 179.1 137.4 C 179 138 173.2 171.6 173.2 171.6 C 173.2 171.6 172.8 173.8 175.2 173.8 L 184.3 173.8 C 184.3 173.8 185.5 166.8 185.8 165.6 C 186.8 160.9 187.6 156.1 190.5 149.3 C 196.4 135.2 205.8 129.5 208.6 132.7 C 209.6 133.8 209.7 136.5 209.1 140.2 L 203.6 171.6 C 203.6 171.6 203.3 173.8 205.6 173.8 L 214.8 173.8 L 216 167 C 217.9 155.3 220.7 148.6 220.7 148.6 C 226 136 233.1 130.7 236.1 131.7 C 236.8 131.9 238.1 132.6 238.7 135 C 239 136.5 239 138.9 238.6 141.6 C 238.1 145.3 235.7 155.5 234.7 163.2 C 233.9 168.5 234.2 170.5 235.8 172.6 C 235.8 172.6 237.2 174.6 241.4 174.5 C 242.9 174.5 244.7 174.3 247.1 173.5 C 245.8 171.9 245.6 168.7 247 160.1 C 247.8 154.8 249.1 149.2 249.1 149.2 C 250.8 140.9 251.3 133.7 249.5 129.4 C 247.3 124 242.2 122.7 239.8 122.5 M 412.4 122.5 C 402.7 121.7 396.5 127.8 392.2 135.3 C 392.2 135 392.3 134.7 392.3 134.3 C 393.1 129 392.7 126.6 391.2 125 C 388.3 121.8 382.3 123.3 379.9 124.1 C 381.2 125.6 381.2 128.5 380 137.4 C 379.8 138.6 379.6 139.9 379.4 141.1 L 379.4 141.1 L 374.1 171.6 C 374.1 171.6 373.7 173.8 376.1 173.8 L 385.2 173.8 C 385.2 173.8 386.4 166.8 386.6 165.6 C 387.7 160.9 388.8 155.9 391.7 149.1 C 397.6 134.9 406.3 130.6 409 131.8 C 410.1 132.2 410.9 133.3 411.2 135 C 411.5 136.5 411.6 138.9 411.1 141.6 C 410.6 145.3 408.3 155.5 407.2 163.2 C 406.5 168.5 406.8 170.5 408.4 172.6 C 408.4 172.6 409.8 174.6 413.9 174.5 C 415.4 174.5 417.3 174.3 419.7 173.5 C 418.3 171.9 418.2 168.7 419.6 160.1 C 420.4 154.8 421.6 149.2 421.6 149.2 C 423.3 140.9 423.9 133.7 422.1 129.4 C 419.9 124 414.5 122.7 412.4 122.5 M 132 124.5 C 128.6 124.7 124.4 125 124.4 125 L 123.3 131.1 C 123 132.9 122.6 134.9 122.2 136.9 C 121.3 140.3 120.2 144 118.3 148.4 C 112.3 162.4 104.4 166.5 101.3 165.9 C 100.4 165.7 99.3 164.8 98.8 162.5 C 98.5 161 98.5 158.6 98.9 155.9 C 99.4 152.3 101.7 142 102.8 134.3 C 103.5 129 103.2 127 101.6 125 C 101.6 125 100.2 122.9 96.1 123 C 94.6 123 92.7 123.2 90.3 124.1 C 91.7 125.6 91.9 128.8 90.5 137.5 C 89.6 142.7 89.2 143.9 88.4 148.3 C 87.5 153.4 86.5 158.9 86.9 163.9 C 87.4 170.2 91.7 174.4 97.6 175 C 107.1 176 113.5 169.7 117.8 162.4 C 117.7 162.7 117.7 162.9 117.7 163.2 C 116.9 168.5 117.2 170.5 118.8 172.5 C 118.8 172.5 120.3 174.6 124.4 174.5 C 125.9 174.5 127.8 174.3 130.1 173.4 C 128.8 171.9 128.8 169 130.1 160.1 C 130.2 158.9 130.4 157.6 130.6 156.4 L 130.6 156.4 L 134 137 L 135.5 128.4 C 135.9 126.3 135.1 124.3 132 124.5 M 307 124.5 C 303.6 124.7 299.3 125 299.3 125 L 298.3 131.1 C 298 132.9 297.6 134.9 297.2 136.9 C 296.3 140.3 295.2 144 293.3 148.4 C 287.3 162.4 279.3 166.5 276.3 165.9 C 275.3 165.7 274.3 164.8 273.7 162.5 C 273.4 161 273.4 158.6 273.9 155.9 C 274.3 152.3 276.7 142 277.8 134.3 C 278.5 129 278.2 127 276.6 125 C 276.6 125 275.2 122.9 271 123 C 269.6 123 267.7 123.2 265.3 124.1 C 266.6 125.6 266.8 128.8 265.4 137.5 C 264.6 142.7 264.2 143.9 263.4 148.3 C 262.4 153.4 261.5 158.9 261.9 163.9 C 262.3 170.2 266.6 174.4 272.6 175 C 282 176 288.5 169.7 292.7 162.4 C 292.7 162.7 292.7 162.9 292.6 163.2 C 291.9 168.5 292.2 170.5 293.8 172.5 C 293.8 172.5 295.2 174.6 299.3 174.5 C 300.8 174.5 302.7 174.3 305.1 173.4 C 303.7 171.9 303.7 169 305 160.1 C 305.2 158.9 305.4 157.6 305.6 156.4 L 305.6 156.4 L 308.9 137 L 310.4 128.4 C 310.8 126.3 310.1 124.3 307 124.5 M 168 90.9 C 167.7 90.9 167.4 90.9 167 91 L 157.8 92.9 L 145.2 164.1 C 144.6 168.2 144.8 169.8 145.6 171.4 C 146.4 172.8 147.6 173.6 148.9 174 C 150.3 174.4 151.8 174.5 153.1 174.5 C 155.5 174.6 157.5 174 157.5 174 C 157.5 174 156.2 170.1 157.3 164 L 169.5 94.8 C 169.8 92.8 170 90.9 168 90.9"/></symbol></svg>
@@ -755,6 +763,7 @@ window.RoleHub = (function () {
   window.__tabMap = function (s) {
     const R = ROLES[role] || ROLES.all;
     if (R.map[s]) s = R.map[s];
+    setTimeout(tabIntoView, 0);                  // 탭 전환 뒤 선택된 탭을 보이는 곳으로
     return R.tabs.includes(s) ? s : R.tabs[0];
   };
   function applyTabs() {
@@ -822,6 +831,23 @@ window.RoleHub = (function () {
       if (S.tt.beef !== undefined) Object.assign(S.tt, S.st);
       $("#rhRestart").click();       // 교육 체험을 처음(입장)부터
     }
+  }
+
+  /* ── 탭 줄 스크롤 표시: 넘칠 때만 가장자리를 흐리게, 선택된 탭은 보이는 곳으로 ── */
+  function tabFade() {
+    const t = $("#dtabs");
+    if (!t) return;
+    const max = t.scrollWidth - t.clientWidth;
+    t.classList.toggle("fade-l", max > 4 && t.scrollLeft > 4);
+    t.classList.toggle("fade-r", max > 4 && t.scrollLeft < max - 4);
+  }
+  function tabIntoView() {
+    const t = $("#dtabs"), b = t && $("button.on", t);
+    if (!b || t.scrollWidth <= t.clientWidth) return tabFade();
+    const l = b.offsetLeft - t.offsetLeft, r = l + b.offsetWidth, pad = 32;
+    if (l < t.scrollLeft + pad) t.scrollLeft = Math.max(0, l - pad);
+    else if (r > t.scrollLeft + t.clientWidth - pad) t.scrollLeft = r - t.clientWidth + pad;
+    tabFade();
   }
 
   window.__onDashClose = function () {
@@ -916,12 +942,19 @@ window.RoleHub = (function () {
     // 첫 화면이 떠 있는 동안에는 교육 체험의 Enter/방향키 단축키가 동작하지 않게
     window.addEventListener("keydown", e => { if (hubOpen()) e.stopPropagation(); }, true);
     ["#rhBadgeStory", "#rhBadgeDash"].forEach(s => $(s) && $(s).addEventListener("click", e => { e.stopPropagation(); showHub(); }));
+    if ($("#dtabs")) { $("#dtabs").addEventListener("scroll", tabFade, { passive: true }); addEventListener("resize", tabFade); }
     if (window.MutationObserver && $("#simScen")) new MutationObserver(() => $("#dash").dataset.view === "month" && renderMonth()).observe($("#simScen"), { childList: true });
   }
 
   wire();
   return {
-    init() { ready = true; if (pending) { const p = pending; pending = null; choose(p); } },
+    init() {
+      ready = true;
+      // 전환 효과를 끈 상태에서 그릇의 첫 위치를 확정(스타일 계산 강제)한 뒤 되살린다(드래그·제자리 복귀 동작용)
+      $$(".bowl,.mbowl").forEach(el => el.getBoundingClientRect());
+      setTimeout(() => document.body.classList.remove("rh-still"), 800);
+      if (pending) { const p = pending; pending = null; choose(p); }
+    },
     choose, showHub, get role() { return role; }
   };
 })();
