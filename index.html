@@ -105,7 +105,8 @@ body.mobile .rh-go{grid-column:3;grid-row:1/span 3;margin:0}
 body.mobile .rh-mods{grid-column:2;grid-row:3;margin-top:6px;padding-top:0;border-top:0;gap:4px 10px}
 body.mobile .rh-mods span{font-size:13px}
 body.mobile .rh-mods i{width:18px;height:18px;font-size:11px}
-body.mobile #roleHub{place-items:end center;padding:0}
+body.mobile #roleHub{display:flex;flex-direction:column;padding:0}
+body.mobile .rh-sheet{margin-top:auto;flex:none}   /* 아래에 붙이되, 화면보다 길면 위에서부터 스크롤 */
 body.mobile .rh-sheet{border-radius:28px 28px 0 0;padding:22px 16px calc(20px + env(safe-area-inset-bottom,0))}
 body.mobile .rh-head .logo-partnership{height:22px;margin-bottom:10px}
 body.mobile .rh-head h1{font-size:24px}
@@ -191,7 +192,8 @@ body.mobile .rh-all-t small{font-size:12px}
 .mc-cal{background:#fff;border:1px solid var(--rh-line);border-radius:8px;padding:18px 20px 16px;color:var(--rh-ink)}
 .mc-cal h3{font-size:17px;font-weight:700}
 .mc-cal .mc-sub{margin-top:4px;font-size:13.5px;line-height:1.55;color:var(--rh-sub)}
-.mc-legend{display:flex;flex-wrap:wrap;gap:4px 14px;margin:10px 0 12px;font-size:12.5px;color:var(--rh-muted)}
+.mc-legend{display:flex;flex-wrap:wrap;gap:4px 20px;margin:10px 0 12px;font-size:12.5px;line-height:20px;color:var(--rh-muted)}
+.mc-legend .lg-g{display:inline-flex;flex-wrap:wrap;gap:0 14px}
 .mc-legend .k-beef{color:#C8352A;font-weight:700}
 .mc-legend .k-meat{color:#4a3aa7;font-weight:700}
 .mc-legend .k-alt{color:var(--rh-accent);font-weight:700}
@@ -206,16 +208,16 @@ body.mobile .rh-all-t small{font-size:12px}
 .mc-table tbody tr:last-child td,.mc-table tbody tr:last-child th{border-bottom:0}
 .mc-table td.chg{background:#F5F9F0}
 .mc-table td.veg{background:var(--rh-accent-bg)}
-.mc-date{display:flex;justify-content:space-between;gap:4px;margin-bottom:4px;font-size:12px;color:var(--rh-muted)}
-.mc-tag{font-weight:700;color:var(--rh-accent)}
-.mc-m{font-size:13.5px;line-height:1.45;word-break:keep-all;overflow-wrap:anywhere}
-.mc-m.side{font-size:12px;color:var(--rh-muted)}
+.mc-date{display:flex;justify-content:space-between;gap:4px;margin-bottom:2px;font-size:12px;line-height:20px;color:var(--rh-muted)}
+.mc-tag{font-weight:700;color:var(--rh-accent);white-space:nowrap}
+.mc-m{font-size:13px;line-height:20px;word-break:keep-all;overflow-wrap:anywhere}
+.mc-m.side{color:var(--rh-muted)}
 .mc-m.beef{color:#C8352A;font-weight:700}
 .mc-m.pork,.mc-m.poultry{color:#4a3aa7;font-weight:700}
 .mc-m.off{text-decoration:line-through;opacity:.55}
-.mc-alt{display:block;overflow-wrap:anywhere;font-size:12px;line-height:1.4;font-weight:700;color:var(--rh-accent)}
+.mc-alt{display:block;overflow-wrap:anywhere;font-size:12.5px;line-height:20px;font-weight:700;color:var(--rh-accent)}
 .mc-alt em{font-style:normal;font-weight:500;color:var(--rh-muted)}
-.mc-v{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+.mc-v{display:flex;align-items:center;gap:6px;margin-top:6px;line-height:20px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
 .mc-bar{flex:1;height:4px;border-radius:2px;background:#E8EAED;overflow:hidden}
 .mc-bar b{display:block;height:100%;background:var(--bc,#8B95A1)}
 .mc-v s{font-weight:500;color:var(--rh-muted)}
@@ -233,7 +235,6 @@ body.mobile .hud-r{gap:6px}
 body.mobile .back:not(.show){display:none}
 body.mobile .hud .rh-badge{height:36px;padding:0 12px;font-size:13px;border-radius:12px}
 body.mobile .dhead-in .rh-badge{height:34px;padding:0 10px;font-size:12.5px}
-body.mobile #dash.rh-hub .dtitle .rh-dt{display:none}
 body.mobile .rh-hero h2{font-size:20px}
 body.mobile .rh-hero p{font-size:14px}
 body.mobile .mc-result .main .num{font-size:24px}
@@ -250,6 +251,27 @@ body.rh-still .bowl,body.rh-still .on-stage,body.rh-still .mbowl{transition:none
 #dtabs.fade-r{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}
 #dtabs.fade-l{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px);mask-image:linear-gradient(to right,transparent,#000 36px)}
 #dtabs.fade-l.fade-r{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent)}
+
+.dtabs .ts{display:none}
+/* 모바일 대시보드 머리: 1줄 = 제목 + 목적 바꾸기, 2줄 = 탭(화면 폭에 맞춰 균등 분할, 스크롤 없음) */
+body.mobile .dhead-in{flex-wrap:wrap;height:auto;padding:10px 12px 8px;column-gap:10px;row-gap:8px}
+body.mobile .dhead-in .dtitle{order:0;flex:1;min-width:0}
+body.mobile .dhead-in .dtitle>span{display:block;min-width:0;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.mobile #dash.rh-hub .dtitle .rh-dt{display:flex}
+body.mobile #dash.rh-hub .dtitle .rh-dt b{font-size:15px}
+body.mobile #dash.rh-hub .dtitle .rh-dt small{font-size:12px}
+body.mobile .dhead-in .rh-badge{order:1}
+body.mobile .dhead-in .dclose{order:2}
+body.mobile #dtabs{order:3;flex:0 0 100%;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:4px;overflow:visible;-webkit-mask-image:none;mask-image:none}
+body.mobile #dtabs button{min-width:0;height:36px;padding:0 4px;font-size:13px}
+body.mobile .dtabs .tl{display:none}
+body.mobile .dtabs .ts{display:inline}
+body.mobile .mc-legend .lg-g{display:flex;flex-basis:100%}
+/* 모바일 첫 화면 카드: 줄 사이 간격을 4px 하나로 */
+body.mobile .rh-card{row-gap:4px}
+body.mobile .rh-who,body.mobile .rh-mods{margin-top:0}
+body.mobile .mc-table{min-width:800px}
+body.mobile .mc-tag{font-size:11px}
 </style>
 <style id="road-motion-fix">
 /* Keep the road itself fixed and move only its repeating lane pattern left. */
@@ -749,6 +771,7 @@ window.RoleHub = (function () {
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+  const SHORT = { detail: "메뉴 비교", compare: "메뉴 바꾸기", sim: "시뮬레이터", method: "계산 방법", month: "한 달 식단", board: "대시보드" };   // 모바일용 짧은 이름
   const LABEL = { detail: "메뉴별 CO₂e 비교", compare: "메뉴 바꾸기 비교", sim: "우리 식당 시뮬레이터", method: "어떻게 계산하나요?", month: "한 달 식단", board: "대시보드" };
   const ROLES = {
     nutri: { name: "식단 설계", who: "영양사용", hub: true, tabs: ["compare", "month", "detail", "method"], label: { compare: "메뉴 교환" }, map: { sim: "month", board: "month" } },
@@ -769,7 +792,13 @@ window.RoleHub = (function () {
   function applyTabs() {
     const R = ROLES[role] || ROLES.all, nav = $("#dtabs");
     const btn = t => $(`#dtabs button[data-tab="${t}"]`);
-    Object.keys(LABEL).forEach(t => { const b = btn(t); if (b) { b.hidden = !R.tabs.includes(t); b.textContent = (R.label && R.label[t]) || LABEL[t]; } });
+    Object.keys(LABEL).forEach(t => {
+      const b = btn(t); if (!b) return;
+      const full = (R.label && R.label[t]) || LABEL[t], short = (R.label && R.label[t]) || SHORT[t];
+      b.hidden = !R.tabs.includes(t);
+      b.innerHTML = `<span class="tl">${esc(full)}</span><span class="ts">${esc(short)}</span>`;
+      b.setAttribute("aria-label", full);
+    });
     R.tabs.forEach(t => btn(t) && nav.appendChild(btn(t)));      // 목적별 탭 순서
     const d = $("#dash");
     d.classList.toggle("rh-hub", !!R.hub);
@@ -887,7 +916,7 @@ window.RoleHub = (function () {
           const q = S.Q(m), f = q.meat && q.alt ? (cfg.swap[q.meat] || 0) : 0;
           if (f > 0) chg = true;
           const cls = q.meat ? " " + q.meat : isSide(m, j) ? " side" : "";
-          const alt = f > 0 ? `<span class="mc-alt">→ ${esc(q.alt)}${f < 1 ? ` <em>${Math.round(f * 100)}%</em>` : ""}</span>` : "";
+          const alt = f > 0 ? `<span class="mc-alt">→&nbsp;${esc(q.alt)}${f < 1 ? `&nbsp;<em>${Math.round(f * 100)}%</em>` : ""}</span>` : "";   // 화살표·비율이 따로 떨어지지 않게
           return `<div class="mc-m${cls}${f >= 1 ? " off" : ""}">${esc(m)}</div>${alt}`;
         }).join("");
       }
@@ -920,7 +949,7 @@ window.RoleHub = (function () {
       <section class="mc-cal" aria-labelledby="mcTitle">
         <h3 id="mcTitle">기준 식단 4주(${S.R.length}끼)</h3>
         <p class="mc-sub">칸 아래 숫자는 그날 1인 한 끼 CO₂e예요. 대체 메뉴 옆 퍼센트는 그 메뉴가 바뀌는 비율이에요.</p>
-        <p class="mc-legend"><span class="k-beef">소고기 메뉴</span><span class="k-meat">돼지·닭·오리 메뉴</span><span class="k-alt">→ 대체 메뉴</span><span><i style="background:#5FA328"></i>1.6kg 미만</span><span><i style="background:#E8A33B"></i>1.6~2.5kg</span><span><i style="background:#E4553B"></i>2.5kg 이상</span></p>
+        <p class="mc-legend"><span class="lg-g"><span class="k-beef">소고기 메뉴</span><span class="k-meat">돼지·닭·오리 메뉴</span><span class="k-alt">→ 대체 메뉴</span></span><span class="lg-g"><span><i style="background:#5FA328"></i>1.6kg 미만</span><span><i style="background:#E8A33B"></i>1.6~2.5kg</span><span><i style="background:#E4553B"></i>2.5kg 이상</span></span></p>
         <div class="mc-scroll" tabindex="0" aria-label="4주 식단표(가로로 스크롤)">
           <table class="mc-table">
             <thead><tr><th scope="col"><span class="sr">주</span></th>${DOW.map(d => `<th scope="col">${d}</th>`).join("")}</tr></thead>
