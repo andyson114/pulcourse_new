@@ -1,0 +1,3473 @@
+{
+  "쌀": {
+    "std": "쌀",
+    "category": "곡류",
+    "stages": {
+      "luc": -0.012,
+      "farm": 1.94,
+      "feed": 0,
+      "processing": 0.0356,
+      "transport": 0.0522,
+      "retail": 0.0346,
+      "packaging": 0.0458,
+      "losses": 0.3338,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Rice' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.45 → 국내 식품군 평균 2.43로 대체"
+  },
+  "현미": {
+    "std": "현미",
+    "category": "곡류",
+    "stages": {
+      "luc": -0.012,
+      "farm": 1.94,
+      "feed": 0,
+      "processing": 0.0356,
+      "transport": 0.0522,
+      "retail": 0.0346,
+      "packaging": 0.0458,
+      "losses": 0.3338,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Rice' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.45 → 국내 식품군 평균 2.43로 대체"
+  },
+  "흑미": {
+    "std": "흑미",
+    "category": "곡류",
+    "stages": {
+      "luc": -0.012,
+      "farm": 1.94,
+      "feed": 0,
+      "processing": 0.0356,
+      "transport": 0.0522,
+      "retail": 0.0346,
+      "packaging": 0.0458,
+      "losses": 0.3338,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Rice' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.45 → 국내 식품군 평균 2.43로 대체"
+  },
+  "찹쌀": {
+    "std": "찹쌀",
+    "category": "곡류",
+    "stages": {
+      "luc": -0.012,
+      "farm": 1.94,
+      "feed": 0,
+      "processing": 0.0356,
+      "transport": 0.0522,
+      "retail": 0.0346,
+      "packaging": 0.0458,
+      "losses": 0.3338,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Rice' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.45 → 국내 식품군 평균 2.43로 대체"
+  },
+  "보리": {
+    "std": "보리",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체"
+  },
+  "기장": {
+    "std": "기장",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 잡곡: 보리 대용"
+  },
+  "수수": {
+    "std": "수수",
+    "category": "",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 잡곡: 보리 대용"
+  },
+  "조": {
+    "std": "조",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 잡곡: 보리 대용"
+  },
+  "율무": {
+    "std": "율무",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 잡곡: 보리 대용"
+  },
+  "귀리": {
+    "std": "귀리",
+    "category": "",
+    "stages": {
+      "luc": 0.0019,
+      "farm": 1.8344,
+      "feed": 0,
+      "processing": 0.0566,
+      "transport": 0.0894,
+      "retail": 0.0385,
+      "packaging": 0.0885,
+      "losses": 0.3207,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Oatmeal' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 2.48 → 국내 식품군 평균 2.43로 대체"
+  },
+  "기타곡물": {
+    "std": "기타곡물",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체"
+  },
+  "혼합잡곡": {
+    "std": "혼합잡곡",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 잡곡 혼합"
+  },
+  "옥수수": {
+    "std": "옥수수",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.4752,
+      "farm": 0.7173,
+      "feed": 0,
+      "processing": 0.0783,
+      "transport": 0.0904,
+      "retail": 0.0393,
+      "packaging": 0.0903,
+      "losses": 0.2108,
+      "disposal": 0
+    },
+    "total": 1.7016,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Maize' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "밀가루": {
+    "std": "밀가루",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "전분": {
+    "std": "전분",
+    "category": "곡류",
+    "stages": {
+      "luc": -0.0013,
+      "farm": 0.1931,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0939,
+      "retail": 0.0392,
+      "packaging": 0.0445,
+      "losses": 0.0907,
+      "disposal": 0
+    },
+    "total": 0.4601,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Potatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "감자전분 기준"
+  },
+  "미숫가루": {
+    "std": "미숫가루",
+    "category": "곡류",
+    "stages": {
+      "luc": 0.0179,
+      "farm": 0.3635,
+      "feed": 0,
+      "processing": 0.2631,
+      "transport": 0.0729,
+      "retail": 0.5432,
+      "packaging": 1.0237,
+      "losses": 0.1457,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Barley' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.18 → 국내 식품군 평균 2.43로 대체; 볶은 곡물가루"
+  },
+  "우유": {
+    "std": "우유",
+    "category": "유제품",
+    "stages": {
+      "luc": 0.5786,
+      "farm": 1.7044,
+      "feed": 0.2754,
+      "processing": 0.1742,
+      "transport": 0.1053,
+      "retail": 0.2994,
+      "packaging": 0.1132,
+      "losses": 0.3096,
+      "disposal": 0
+    },
+    "total": 3.5601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Milk and milk products' 3.56 kgCO2e/kg(전체 시스템)을 P&N 'Milk' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.15 → 국내 식품군 평균 3.56로 대체"
+  },
+  "요거트": {
+    "std": "요거트",
+    "category": "유제품",
+    "stages": {
+      "luc": 0.5786,
+      "farm": 1.7044,
+      "feed": 0.2754,
+      "processing": 0.1742,
+      "transport": 0.1053,
+      "retail": 0.2994,
+      "packaging": 0.1132,
+      "losses": 0.3096,
+      "disposal": 0
+    },
+    "total": 3.5601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Milk and milk products' 3.56 kgCO2e/kg(전체 시스템)을 P&N 'Milk' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.15 → 국내 식품군 평균 3.56로 대체; 우유 가공품, 가공 단계 가산 필요"
+  },
+  "치즈": {
+    "std": "치즈",
+    "category": "유제품",
+    "stages": {
+      "luc": 4.4675,
+      "farm": 13.0955,
+      "feed": 2.3531,
+      "processing": 0.7404,
+      "transport": 0.1386,
+      "retail": 0.3333,
+      "packaging": 0.1721,
+      "losses": 2.5771,
+      "disposal": 0
+    },
+    "total": 23.8776,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Cheese' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "버터": {
+    "std": "버터",
+    "category": "유제품",
+    "stages": {
+      "luc": 4.4675,
+      "farm": 13.0955,
+      "feed": 2.3531,
+      "processing": 0.7404,
+      "transport": 0.1386,
+      "retail": 0.3333,
+      "packaging": 0.1721,
+      "losses": 2.5771,
+      "disposal": 0
+    },
+    "total": 23.8776,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Cheese' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "유지방 농축품, 치즈 대용"
+  },
+  "생크림": {
+    "std": "생크림",
+    "category": "유제품",
+    "stages": {
+      "luc": 4.4675,
+      "farm": 13.0955,
+      "feed": 2.3531,
+      "processing": 0.7404,
+      "transport": 0.1386,
+      "retail": 0.3333,
+      "packaging": 0.1721,
+      "losses": 2.5771,
+      "disposal": 0
+    },
+    "total": 23.8776,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Cheese' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "유지방"
+  },
+  "두부": {
+    "std": "두부",
+    "category": "두류",
+    "stages": {
+      "luc": 0,
+      "farm": 0.1975,
+      "feed": 0,
+      "processing": 0.474,
+      "transport": 0.1769,
+      "retail": 0.2702,
+      "packaging": 0.1774,
+      "losses": 0,
+      "disposal": 0.0155
+    },
+    "total": 1.3115,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 2개 kg당 중앙값(제조전·제조·폐기) + P&N 'Tofu' 유통 대용",
+    "components": [],
+    "note": "제품 예: 오늘좋은 국산콩 두부 기획(300g*2) 0.69; 오늘좋은 국산콩 두부(300g) 0.69"
+  },
+  "두유": {
+    "std": "두유",
+    "category": "두류",
+    "stages": {
+      "luc": 0.18,
+      "farm": 0.0928,
+      "feed": 0,
+      "processing": 0.1625,
+      "transport": 0.1098,
+      "retail": 0.2702,
+      "packaging": 0.0984,
+      "losses": 0.0615,
+      "disposal": 0
+    },
+    "total": 0.9752,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Soy milk' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "콩류": {
+    "std": "콩류",
+    "category": "두류",
+    "stages": {
+      "luc": 0.0384,
+      "farm": 1.2555,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1109,
+      "retail": 0.0453,
+      "packaging": 0.4073,
+      "losses": 0.2025,
+      "disposal": 0
+    },
+    "total": 2.0599,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Pulses' 2.06 kgCO2e/kg(전체 시스템)을 P&N 'Other Pulses' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.79 → 국내 식품군 평균 2.06로 대체"
+  },
+  "낫토": {
+    "std": "낫토",
+    "category": "두류",
+    "stages": {
+      "luc": 0.0384,
+      "farm": 1.2555,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1109,
+      "retail": 0.0453,
+      "packaging": 0.4073,
+      "losses": 0.2025,
+      "disposal": 0
+    },
+    "total": 2.0599,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Pulses' 2.06 kgCO2e/kg(전체 시스템)을 P&N 'Other Pulses' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 1.79 → 국내 식품군 평균 2.06로 대체; 대두 발효"
+  },
+  "콩나물": {
+    "std": "콩나물",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "콩 발아채소"
+  },
+  "숙주나물": {
+    "std": "숙주나물",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "계란": {
+    "std": "계란",
+    "category": "난류",
+    "stages": {
+      "luc": 0.6207,
+      "farm": 1.153,
+      "feed": 1.9267,
+      "processing": 0,
+      "transport": 0.0735,
+      "retail": 0.0311,
+      "packaging": 0.141,
+      "losses": 0.1339,
+      "disposal": 0
+    },
+    "total": 4.0799,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Eggs' 4.08 kgCO2e/kg(전체 시스템)을 P&N 'Eggs' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.67 → 국내 식품군 평균 4.08로 대체"
+  },
+  "소고기": {
+    "std": "소고기",
+    "category": "육류",
+    "stages": {
+      "luc": 0,
+      "farm": 40.2947,
+      "feed": 0,
+      "processing": 0.6857,
+      "transport": 0.359,
+      "retail": 0,
+      "packaging": 0,
+      "losses": 0,
+      "disposal": 0
+    },
+    "total": 41.3394,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S002"
+    ],
+    "basis": "자급률 가중 혼합(국내산 42%): 기후솔루션 2026 단계별 값",
+    "components": [
+      {
+        "share": 0.42,
+        "label": "국내산 소고기 (S002) 비중 42%",
+        "total": 58.16
+      },
+      {
+        "share": 0.281,
+        "label": "US산 쇠고기 (S002) 비중 28.1%",
+        "total": 32.05
+      },
+      {
+        "share": 0.281,
+        "label": "AU산 쇠고기 (S002) 비중 28.1%",
+        "total": 26.82
+      },
+      {
+        "share": 0.0179,
+        "label": "NZ산 쇠고기 (S002) 비중 1.8%",
+        "total": 20.51
+      }
+    ],
+    "note": "",
+    "variants": {
+      "국내산": {
+        "std": "소고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 57.52,
+          "feed": 0,
+          "processing": 0.56,
+          "transport": 0.08,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 58.16,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "국내산(한우/한돈/국내 육계) 단일값",
+        "components": [],
+        "note": ""
+      },
+      "US": {
+        "std": "소고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 30.67,
+          "feed": 0,
+          "processing": 0.59,
+          "transport": 0.79,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 32.05,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "US산 쇠고기",
+        "components": [],
+        "note": ""
+      },
+      "AU": {
+        "std": "소고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 25.49,
+          "feed": 0,
+          "processing": 0.98,
+          "transport": 0.35,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 26.82,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "AU산 쇠고기",
+        "components": [],
+        "note": ""
+      },
+      "NZ": {
+        "std": "소고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 19.71,
+          "feed": 0,
+          "processing": 0.52,
+          "transport": 0.28,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 20.51,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "NZ산 쇠고기",
+        "components": [],
+        "note": ""
+      }
+    }
+  },
+  "돼지고기": {
+    "std": "돼지고기",
+    "category": "육류",
+    "stages": {
+      "luc": 0.6508,
+      "farm": 9.7496,
+      "feed": 1.2466,
+      "processing": 0.5182,
+      "transport": 0.2022,
+      "retail": 0.0806,
+      "packaging": 0.1254,
+      "losses": 0.481,
+      "disposal": 0
+    },
+    "total": 13.0544,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S002",
+      "S001"
+    ],
+    "basis": "자급률 가중 혼합(국내산 71%): 기후솔루션 2026 단계별 값 + 수입분 P&N 대용",
+    "components": [
+      {
+        "share": 0.71,
+        "label": "국내산 돼지고기 (S002) 비중 71%",
+        "total": 13.36
+      },
+      {
+        "share": 0.29,
+        "label": "수입산 대용: P&N 'Pig Meat' 비중 29%",
+        "total": 12.306
+      }
+    ],
+    "note": "",
+    "variants": {
+      "국내산": {
+        "std": "돼지고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 12.72,
+          "feed": 0,
+          "processing": 0.56,
+          "transport": 0.08,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 13.36,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "국내산(한우/한돈/국내 육계) 단일값",
+        "components": [],
+        "note": ""
+      }
+    }
+  },
+  "닭고기": {
+    "std": "닭고기",
+    "category": "육류",
+    "stages": {
+      "luc": 0.8771,
+      "farm": 3.7269,
+      "feed": 0.6131,
+      "processing": 0.6469,
+      "transport": 0.1253,
+      "retail": 0.061,
+      "packaging": 0.0732,
+      "losses": 0.363,
+      "disposal": 0
+    },
+    "total": 6.4865,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S002",
+      "S001"
+    ],
+    "basis": "자급률 가중 혼합(국내산 75%): 기후솔루션 2026 단계별 값 + 수입분 P&N 대용",
+    "components": [
+      {
+        "share": 0.75,
+        "label": "국내산 닭고기 (S002) 비중 75%",
+        "total": 5.36
+      },
+      {
+        "share": 0.25,
+        "label": "수입산 대용: P&N 'Poultry Meat' 비중 25%",
+        "total": 9.866
+      }
+    ],
+    "note": "",
+    "variants": {
+      "국내산": {
+        "std": "닭고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 4.66,
+          "feed": 0,
+          "processing": 0.66,
+          "transport": 0.04,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 5.36,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "국내산(한우/한돈/국내 육계) 단일값",
+        "components": [],
+        "note": ""
+      }
+    }
+  },
+  "오리고기": {
+    "std": "오리고기",
+    "category": "육류",
+    "stages": {
+      "luc": 3.5084,
+      "farm": 0.9278,
+      "feed": 2.4524,
+      "processing": 0.6074,
+      "transport": 0.3811,
+      "retail": 0.244,
+      "packaging": 0.2927,
+      "losses": 1.4521,
+      "disposal": 0
+    },
+    "total": 9.8659,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Poultry Meat' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "가금류"
+  },
+  "양고기": {
+    "std": "양고기",
+    "category": "",
+    "stages": {
+      "luc": 0.6482,
+      "farm": 27.0257,
+      "feed": 3.2832,
+      "processing": 1.5396,
+      "transport": 0.6789,
+      "retail": 0.3008,
+      "packaging": 0.3476,
+      "losses": 5.8982,
+      "disposal": 0
+    },
+    "total": 39.7222,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Lamb & Mutton' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "육가공품": {
+    "std": "육가공품",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0,
+      "farm": 4.06,
+      "feed": 0,
+      "processing": 0.481,
+      "transport": 0.5013,
+      "retail": 0.2781,
+      "packaging": 0.4323,
+      "losses": 0,
+      "disposal": 0.093
+    },
+    "total": 5.8457,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 1개 kg당 중앙값(제조전·제조·폐기) + P&N 'Pig Meat' 유통 대용",
+    "components": [],
+    "note": "제품 예: 동물복지 돼지로 만든 순햄 (200g) 4.63"
+  },
+  "등푸른생선": {
+    "std": "등푸른생선",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "흰살생선": {
+    "std": "흰살생선",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "명태·황태": {
+    "std": "명태·황태",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "멸치": {
+    "std": "멸치",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "오징어·낙지류": {
+    "std": "오징어·낙지류",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "새우": {
+    "std": "새우",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "조개류": {
+    "std": "조개류",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "게": {
+    "std": "게",
+    "category": "어패류",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "어묵·어육가공": {
+    "std": "어묵·어육가공",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.2355,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.9702,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분 + 어육 가공 대용",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "젓갈·액젓": {
+    "std": "젓갈·액젓",
+    "category": "양념",
+    "stages": {
+      "luc": 0.6801,
+      "farm": 4.5858,
+      "feed": 1.0442,
+      "processing": 0.0254,
+      "transport": 0.1412,
+      "retail": 0.0512,
+      "packaging": 0.0783,
+      "losses": 1.1539,
+      "disposal": 0
+    },
+    "total": 7.7601,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Fishes' 7.76 kgCO2e/kg(전체 시스템)을 P&N 'Fish (farmed)' 단계 비율로 배분 (염장; 사용량 적음)",
+    "components": [],
+    "note": "P&N 양식어 13.6은 어획어 중심의 국내 급식 생선에 과대 → 국내 식품군 평균 채택"
+  },
+  "미역": {
+    "std": "미역",
+    "category": "해조류",
+    "stages": {
+      "luc": 0.0013,
+      "farm": 0.1954,
+      "feed": 0,
+      "processing": 0.067,
+      "transport": 0.1835,
+      "retail": 0.0167,
+      "packaging": 0.0462,
+      "losses": 0.0798,
+      "disposal": 0
+    },
+    "total": 0.5899,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Seaweeds' 0.59 kgCO2e/kg(전체 시스템)을 P&N 'Other Vegetables' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 0.53 → 국내 식품군 평균 0.59로 대체; 해조류; S003 Seaweeds 0.59(전체 시스템) 참고"
+  },
+  "다시마": {
+    "std": "다시마",
+    "category": "해조류",
+    "stages": {
+      "luc": 0.0013,
+      "farm": 0.1954,
+      "feed": 0,
+      "processing": 0.067,
+      "transport": 0.1835,
+      "retail": 0.0167,
+      "packaging": 0.0462,
+      "losses": 0.0798,
+      "disposal": 0
+    },
+    "total": 0.5899,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Seaweeds' 0.59 kgCO2e/kg(전체 시스템)을 P&N 'Other Vegetables' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 0.53 → 국내 식품군 평균 0.59로 대체; 해조류"
+  },
+  "김·해조류": {
+    "std": "김·해조류",
+    "category": "해조류",
+    "stages": {
+      "luc": 0.0013,
+      "farm": 0.1954,
+      "feed": 0,
+      "processing": 0.067,
+      "transport": 0.1835,
+      "retail": 0.0167,
+      "packaging": 0.0462,
+      "losses": 0.0798,
+      "disposal": 0
+    },
+    "total": 0.5899,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Seaweeds' 0.59 kgCO2e/kg(전체 시스템)을 P&N 'Other Vegetables' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 0.53 → 국내 식품군 평균 0.59로 대체; 해조류"
+  },
+  "양파": {
+    "std": "양파",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0048,
+      "farm": 0.211,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0948,
+      "retail": 0.0392,
+      "packaging": 0.0448,
+      "losses": 0.1021,
+      "disposal": 0
+    },
+    "total": 0.4967,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Onions & Leeks' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "대파": {
+    "std": "대파",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0048,
+      "farm": 0.211,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0948,
+      "retail": 0.0392,
+      "packaging": 0.0448,
+      "losses": 0.1021,
+      "disposal": 0
+    },
+    "total": 0.4967,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Onions & Leeks' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "쪽파": {
+    "std": "쪽파",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0048,
+      "farm": 0.211,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0948,
+      "retail": 0.0392,
+      "packaging": 0.0448,
+      "losses": 0.1021,
+      "disposal": 0
+    },
+    "total": 0.4967,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Onions & Leeks' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "마늘": {
+    "std": "마늘",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0048,
+      "farm": 0.211,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0948,
+      "retail": 0.0392,
+      "packaging": 0.0448,
+      "losses": 0.1021,
+      "disposal": 0
+    },
+    "total": 0.4967,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Onions & Leeks' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "파속"
+  },
+  "생강": {
+    "std": "생강",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0134,
+      "farm": 0.154,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1138,
+      "retail": 0.0389,
+      "packaging": 0.0447,
+      "losses": 0.0616,
+      "disposal": 0
+    },
+    "total": 0.4264,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Root Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "고추": {
+    "std": "고추",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "고춧가루": {
+    "std": "고춧가루",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "건조·분쇄로 원물 대비 농축(약 6~7배 중량 감소) → 별도 산정 필요"
+  },
+  "피망·파프리카": {
+    "std": "피망·파프리카",
+    "category": "채소",
+    "stages": {
+      "luc": 0.373,
+      "farm": 0.7054,
+      "feed": 0,
+      "processing": 0.0124,
+      "transport": 0.1771,
+      "retail": 0.0167,
+      "packaging": 0.1457,
+      "losses": 0.6584,
+      "disposal": 0
+    },
+    "total": 2.0887,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Tomatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "시설재배 과채"
+  },
+  "당근": {
+    "std": "당근",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0134,
+      "farm": 0.154,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1138,
+      "retail": 0.0389,
+      "packaging": 0.0447,
+      "losses": 0.0616,
+      "disposal": 0
+    },
+    "total": 0.4264,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Root Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "무": {
+    "std": "무",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0134,
+      "farm": 0.154,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1138,
+      "retail": 0.0389,
+      "packaging": 0.0447,
+      "losses": 0.0616,
+      "disposal": 0
+    },
+    "total": 0.4264,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Root Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "감자": {
+    "std": "감자",
+    "category": "채소",
+    "stages": {
+      "luc": -0.0013,
+      "farm": 0.1931,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0939,
+      "retail": 0.0392,
+      "packaging": 0.0445,
+      "losses": 0.0907,
+      "disposal": 0
+    },
+    "total": 0.4601,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Potatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "고구마": {
+    "std": "고구마",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0134,
+      "farm": 0.154,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1138,
+      "retail": 0.0389,
+      "packaging": 0.0447,
+      "losses": 0.0616,
+      "disposal": 0
+    },
+    "total": 0.4264,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Root Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "뿌리채소": {
+    "std": "뿌리채소",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0134,
+      "farm": 0.154,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.1138,
+      "retail": 0.0389,
+      "packaging": 0.0447,
+      "losses": 0.0616,
+      "disposal": 0
+    },
+    "total": 0.4264,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Root Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "애호박": {
+    "std": "애호박",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "단호박": {
+    "std": "단호박",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "오이": {
+    "std": "오이",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "시설재배 시 상향"
+  },
+  "가지": {
+    "std": "가지",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "토마토": {
+    "std": "토마토",
+    "category": "채소",
+    "stages": {
+      "luc": 0.373,
+      "farm": 0.7054,
+      "feed": 0,
+      "processing": 0.0124,
+      "transport": 0.1771,
+      "retail": 0.0167,
+      "packaging": 0.1457,
+      "losses": 0.6584,
+      "disposal": 0
+    },
+    "total": 2.0887,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Tomatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "양배추": {
+    "std": "양배추",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0022,
+      "farm": 0.2777,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0946,
+      "retail": 0.0168,
+      "packaging": 0.0453,
+      "losses": 0.0778,
+      "disposal": 0
+    },
+    "total": 0.5144,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Brassicas' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "배추": {
+    "std": "배추",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0022,
+      "farm": 0.2777,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0946,
+      "retail": 0.0168,
+      "packaging": 0.0453,
+      "losses": 0.0778,
+      "disposal": 0
+    },
+    "total": 0.5144,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Brassicas' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "브로콜리": {
+    "std": "브로콜리",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0022,
+      "farm": 0.2777,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0946,
+      "retail": 0.0168,
+      "packaging": 0.0453,
+      "losses": 0.0778,
+      "disposal": 0
+    },
+    "total": 0.5144,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Brassicas' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "상추류": {
+    "std": "상추류",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "청경채": {
+    "std": "청경채",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0022,
+      "farm": 0.2777,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0946,
+      "retail": 0.0168,
+      "packaging": 0.0453,
+      "losses": 0.0778,
+      "disposal": 0
+    },
+    "total": 0.5144,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Brassicas' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "시금치": {
+    "std": "시금치",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "부추": {
+    "std": "부추",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "깻잎": {
+    "std": "깻잎",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "국거리·나물채소": {
+    "std": "국거리·나물채소",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "건나물·묵나물": {
+    "std": "건나물·묵나물",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "건조 나물은 중량 농축"
+  },
+  "산나물": {
+    "std": "산나물",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "잎·산채류": {
+    "std": "잎·산채류",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "기타채소": {
+    "std": "기타채소",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "버섯": {
+    "std": "버섯",
+    "category": "버섯",
+    "stages": {
+      "luc": 0.0063,
+      "farm": 0.9305,
+      "feed": 0,
+      "processing": 0.319,
+      "transport": 0.874,
+      "retail": 0.0797,
+      "packaging": 0.2202,
+      "losses": 0.3802,
+      "disposal": 0
+    },
+    "total": 2.8099,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Mushrooms' 2.81 kgCO2e/kg(전체 시스템)을 P&N 'Other Vegetables' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 0.53 → 국내 식품군 평균 2.81로 대체; S003 Mushrooms 2.81(전체 시스템) 참고"
+  },
+  "잎채소": {
+    "std": "잎채소",
+    "category": "채소",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "김치·절임류": {
+    "std": "김치·절임류",
+    "category": "김치·절임",
+    "stages": {
+      "luc": 0.0167,
+      "farm": 0.3623,
+      "feed": 0.0209,
+      "processing": 0.0101,
+      "transport": 0.1141,
+      "retail": 0.0203,
+      "packaging": 0.098,
+      "losses": 0.0965,
+      "disposal": 0.0001
+    },
+    "total": 0.739,
+    "quality": "pending",
+    "sigma": 0.6,
+    "sources": [
+      "S001",
+      "S003"
+    ],
+    "basis": "표준 배합 가정(배추 80%·무 8%·고춧가루 3%·마늘 2%·젓갈 2%·파 2%·당류 2%·소금 1%)의 재료 계수 합 + 가공·포장 가정. 환경성적표지 목록에 김치 없음(결정 13 대체안)",
+    "components": [
+      {
+        "share": 0.8,
+        "label": "배추",
+        "total": 0.5144
+      },
+      {
+        "share": 0.08,
+        "label": "무",
+        "total": 0.4264
+      },
+      {
+        "share": 0.03,
+        "label": "고춧가루",
+        "total": 0.5321
+      },
+      {
+        "share": 0.02,
+        "label": "마늘",
+        "total": 0.4967
+      },
+      {
+        "share": 0.02,
+        "label": "젓갈·액젓",
+        "total": 7.7601
+      },
+      {
+        "share": 0.02,
+        "label": "대파",
+        "total": 0.4967
+      },
+      {
+        "share": 0.02,
+        "label": "당류",
+        "total": 1.6885
+      },
+      {
+        "share": 0.01,
+        "label": "소금",
+        "total": 1.85
+      }
+    ],
+    "note": "교차 확인: 한국 식품군 평균 '채소' 2.15 kgCO2e/kg (전체 시스템)"
+  },
+  "사과": {
+    "std": "사과",
+    "category": "과일",
+    "stages": {
+      "luc": -0.029,
+      "farm": 0.2258,
+      "feed": 0,
+      "processing": 0.0038,
+      "transport": 0.0958,
+      "retail": 0.0166,
+      "packaging": 0.0445,
+      "losses": 0.0708,
+      "disposal": 0
+    },
+    "total": 0.4283,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Apples' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "배": {
+    "std": "배",
+    "category": "과일",
+    "stages": {
+      "luc": -0.029,
+      "farm": 0.2258,
+      "feed": 0,
+      "processing": 0.0038,
+      "transport": 0.0958,
+      "retail": 0.0166,
+      "packaging": 0.0445,
+      "losses": 0.0708,
+      "disposal": 0
+    },
+    "total": 0.4283,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Apples' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "인과류"
+  },
+  "바나나": {
+    "std": "바나나",
+    "category": "과일",
+    "stages": {
+      "luc": -0.0255,
+      "farm": 0.2696,
+      "feed": 0,
+      "processing": 0.0601,
+      "transport": 0.2958,
+      "retail": 0.021,
+      "packaging": 0.0657,
+      "losses": 0.1752,
+      "disposal": 0
+    },
+    "total": 0.8619,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Bananas' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "감귤류": {
+    "std": "감귤류",
+    "category": "과일",
+    "stages": {
+      "luc": -0.146,
+      "farm": 0.3067,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0939,
+      "retail": 0.0167,
+      "packaging": 0.0447,
+      "losses": 0.0716,
+      "disposal": 0
+    },
+    "total": 0.3876,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Citrus Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "베리·포도류": {
+    "std": "베리·포도류",
+    "category": "과일",
+    "stages": {
+      "luc": 0.0246,
+      "farm": 0.7178,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.2364,
+      "retail": 0.0171,
+      "packaging": 0.2111,
+      "losses": 0.3249,
+      "disposal": 0
+    },
+    "total": 1.5319,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Berries & Grapes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "박과과일": {
+    "std": "박과과일",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "키위": {
+    "std": "키위",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "열대과일": {
+    "std": "열대과일",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "핵과류": {
+    "std": "핵과류",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "감": {
+    "std": "감",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "기타과일": {
+    "std": "기타과일",
+    "category": "과일",
+    "stages": {
+      "luc": 0.127,
+      "farm": 0.3726,
+      "feed": 0,
+      "processing": 0.0156,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0.296,
+      "disposal": 0
+    },
+    "total": 1.0528,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Fruit' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "견과류": {
+    "std": "견과류",
+    "category": "견과",
+    "stages": {
+      "luc": -10.9847,
+      "farm": 11.3779,
+      "feed": 0,
+      "processing": 0.1733,
+      "transport": 0.3598,
+      "retail": 0.1436,
+      "packaging": 0.4171,
+      "losses": -0.027,
+      "disposal": 0
+    },
+    "total": 1.46,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Nuts and seeds' 1.46 kgCO2e/kg(전체 시스템)을 P&N 'Nuts' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 0.43 → 국내 식품군 평균 1.46로 대체"
+  },
+  "참깨": {
+    "std": "참깨",
+    "category": "견과",
+    "stages": {
+      "luc": 0.2193,
+      "farm": 0.7123,
+      "feed": 0,
+      "processing": 0.1857,
+      "transport": 0.0599,
+      "retail": 0.0212,
+      "packaging": 0.0494,
+      "losses": 0.212,
+      "disposal": 0
+    },
+    "total": 1.4598,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Nuts and seeds' 1.46 kgCO2e/kg(전체 시스템)을 P&N 'Groundnuts' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.23 → 국내 식품군 평균 1.46로 대체; 유지종자"
+  },
+  "들깨": {
+    "std": "들깨",
+    "category": "견과",
+    "stages": {
+      "luc": 0.2193,
+      "farm": 0.7123,
+      "feed": 0,
+      "processing": 0.1857,
+      "transport": 0.0599,
+      "retail": 0.0212,
+      "packaging": 0.0494,
+      "losses": 0.212,
+      "disposal": 0
+    },
+    "total": 1.4598,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Nuts and seeds' 1.46 kgCO2e/kg(전체 시스템)을 P&N 'Groundnuts' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.23 → 국내 식품군 평균 1.46로 대체; 유지종자"
+  },
+  "식용유": {
+    "std": "식용유",
+    "category": "유지",
+    "stages": {
+      "luc": 1.6904,
+      "farm": 0.8294,
+      "feed": 0,
+      "processing": 0.1697,
+      "transport": 0.1634,
+      "retail": 0.0232,
+      "packaging": 0.4636,
+      "losses": 0.3903,
+      "disposal": 0
+    },
+    "total": 3.73,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Plant oils' 3.73 kgCO2e/kg(전체 시스템)을 P&N 'Soybean Oil' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 6.32 → 국내 식품군 평균 3.73로 대체; 대두유 기준"
+  },
+  "참기름": {
+    "std": "참기름",
+    "category": "유지",
+    "stages": {
+      "luc": 0.1268,
+      "farm": 2.0481,
+      "feed": 0,
+      "processing": 0.2183,
+      "transport": 0.1912,
+      "retail": 0.0407,
+      "packaging": 0.813,
+      "losses": 0.2918,
+      "disposal": 0
+    },
+    "total": 3.7299,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Plant oils' 3.73 kgCO2e/kg(전체 시스템)을 P&N 'Sunflower Oil' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.6 → 국내 식품군 평균 3.73로 대체; 종자유"
+  },
+  "들기름": {
+    "std": "들기름",
+    "category": "유지",
+    "stages": {
+      "luc": 0.1268,
+      "farm": 2.0481,
+      "feed": 0,
+      "processing": 0.2183,
+      "transport": 0.1912,
+      "retail": 0.0407,
+      "packaging": 0.813,
+      "losses": 0.2918,
+      "disposal": 0
+    },
+    "total": 3.7299,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Plant oils' 3.73 kgCO2e/kg(전체 시스템)을 P&N 'Sunflower Oil' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 3.6 → 국내 식품군 평균 3.73로 대체; 종자유"
+  },
+  "당류": {
+    "std": "당류",
+    "category": "당류",
+    "stages": {
+      "luc": 0,
+      "farm": 0.562,
+      "feed": 0,
+      "processing": 0.206,
+      "transport": 0.7945,
+      "retail": 0.0367,
+      "packaging": 0.0843,
+      "losses": 0,
+      "disposal": 0.005
+    },
+    "total": 1.6885,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 13개 kg당 중앙값(제조전·제조·폐기) + P&N 'Cane Sugar' 유통 대용",
+    "components": [],
+    "note": "제품 예: 큐원 갈색설탕[1kg] 0.87; 큐원 갈색설탕[3kg] 0.83; 큐원 갈색설탕[15kg] 0.84; 큐원 흑설탕[1kg] 0.85; 큐원 흑설탕[15kg] 0.84; 백설 갈색설탕(1kg) 0.81"
+  },
+  "소금": {
+    "std": "소금",
+    "category": "양념",
+    "stages": {
+      "luc": 0,
+      "farm": 1.11,
+      "feed": 0,
+      "processing": 0.37,
+      "transport": 0.185,
+      "retail": 0,
+      "packaging": 0.185,
+      "losses": 0,
+      "disposal": 0
+    },
+    "total": 1.85,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003"
+    ],
+    "basis": "한국 식품군 평균 'Seasoning' 1.85 kgCO2e/kg (전체 시스템 5단계 합; 단계 배분 60/20/10/10은 가정)",
+    "components": [],
+    "note": "개별 품목값 없음 → 식품군 평균 대용"
+  },
+  "식초": {
+    "std": "식초",
+    "category": "양념",
+    "stages": {
+      "luc": -0.0613,
+      "farm": 0.626,
+      "feed": 0,
+      "processing": 0.1386,
+      "transport": 0.0933,
+      "retail": 0.0393,
+      "packaging": 0.7492,
+      "losses": 0.2035,
+      "disposal": 0
+    },
+    "total": 1.7886,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wine' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "발효"
+  },
+  "간장": {
+    "std": "간장",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0333,
+      "farm": 1.0887,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0962,
+      "retail": 0.0393,
+      "packaging": 0.3532,
+      "losses": 0.1756,
+      "disposal": 0
+    },
+    "total": 1.7863,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Pulses' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "대두 발효 + 가공"
+  },
+  "된장": {
+    "std": "된장",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0333,
+      "farm": 1.0887,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0962,
+      "retail": 0.0393,
+      "packaging": 0.3532,
+      "losses": 0.1756,
+      "disposal": 0
+    },
+    "total": 1.7863,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Pulses' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "대두 발효"
+  },
+  "고추장": {
+    "std": "고추장",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0333,
+      "farm": 1.0887,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0962,
+      "retail": 0.0393,
+      "packaging": 0.3532,
+      "losses": 0.1756,
+      "disposal": 0
+    },
+    "total": 1.7863,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Pulses' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "대두·고춧가루·곡물"
+  },
+  "중식·동남아소스": {
+    "std": "중식·동남아소스",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0333,
+      "farm": 1.0887,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0962,
+      "retail": 0.0393,
+      "packaging": 0.3532,
+      "losses": 0.1756,
+      "disposal": 0
+    },
+    "total": 1.7863,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Pulses' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "마요네즈·드레싱": {
+    "std": "마요네즈·드레싱",
+    "category": "양념",
+    "stages": {
+      "luc": 2.8662,
+      "farm": 1.4063,
+      "feed": 0,
+      "processing": 0.2878,
+      "transport": 0.277,
+      "retail": 0.0394,
+      "packaging": 0.7861,
+      "losses": 0.6618,
+      "disposal": 0
+    },
+    "total": 6.3246,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Soybean Oil' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "유지 기반"
+  },
+  "토마토소스": {
+    "std": "토마토소스",
+    "category": "양념",
+    "stages": {
+      "luc": 0.373,
+      "farm": 0.7054,
+      "feed": 0,
+      "processing": 0.0124,
+      "transport": 0.1771,
+      "retail": 0.0167,
+      "packaging": 0.1457,
+      "losses": 0.6584,
+      "disposal": 0
+    },
+    "total": 2.0887,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Tomatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "농축"
+  },
+  "카레·루": {
+    "std": "카레·루",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "밀가루·유지"
+  },
+  "육수·스톡": {
+    "std": "육수·스톡",
+    "category": "양념",
+    "stages": {
+      "luc": 0.034,
+      "farm": 0.2293,
+      "feed": 0.0522,
+      "processing": 0.0213,
+      "transport": 0.0071,
+      "retail": 0.0026,
+      "packaging": 0.0039,
+      "losses": 0.0577,
+      "disposal": 0
+    },
+    "total": 0.4081,
+    "quality": "pending",
+    "sigma": 0.6,
+    "sources": [
+      "S003"
+    ],
+    "basis": "희석 국물 대용: 고형분 5%(멸치·다시마 기준) × 생선 계수 + 가열 가공 0.02 (가정)",
+    "components": [],
+    "note": "물 자체는 0에 가까움; 시판 육수 제품은 별도 EPD 없음"
+  },
+  "조리주": {
+    "std": "조리주",
+    "category": "양념",
+    "stages": {
+      "luc": -0.0613,
+      "farm": 0.626,
+      "feed": 0,
+      "processing": 0.1386,
+      "transport": 0.0933,
+      "retail": 0.0393,
+      "packaging": 0.7492,
+      "losses": 0.2035,
+      "disposal": 0
+    },
+    "total": 1.7886,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wine' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "향신료": {
+    "std": "향신료",
+    "category": "양념",
+    "stages": {
+      "luc": 0.0012,
+      "farm": 0.1762,
+      "feed": 0,
+      "processing": 0.0604,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0.072,
+      "disposal": 0
+    },
+    "total": 0.5321,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Other Vegetables' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "건조 향신료 농축"
+  },
+  "기타양념·소스": {
+    "std": "기타양념·소스",
+    "category": "양념",
+    "stages": {
+      "luc": 0,
+      "farm": 1.11,
+      "feed": 0,
+      "processing": 0.37,
+      "transport": 0.185,
+      "retail": 0,
+      "packaging": 0.185,
+      "losses": 0,
+      "disposal": 0
+    },
+    "total": 1.85,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003"
+    ],
+    "basis": "한국 식품군 평균 'Seasoning' 1.85 kgCO2e/kg (전체 시스템 5단계 합; 단계 배분 60/20/10/10은 가정)",
+    "components": [],
+    "note": "개별 품목값 없음 → 식품군 평균 대용"
+  },
+  "과일주스": {
+    "std": "과일주스",
+    "category": "음료",
+    "stages": {
+      "luc": 0,
+      "farm": 0.495,
+      "feed": 0,
+      "processing": 0.521,
+      "transport": 0.1832,
+      "retail": 0.0164,
+      "packaging": 0.042,
+      "losses": 0,
+      "disposal": 0.042
+    },
+    "total": 1.2996,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 1개 kg당 중앙값(제조전·제조·폐기) + P&N 'Other Fruit' 유통 대용",
+    "components": [],
+    "note": "제품 예: 피코크 ABC클렌즈주스 [900ml, PET] 1.06"
+  },
+  "차·물": {
+    "std": "차·물",
+    "category": "음료",
+    "stages": {
+      "luc": 0,
+      "farm": 0.097,
+      "feed": 0,
+      "processing": 0.041,
+      "transport": 0.1655,
+      "retail": 0.0151,
+      "packaging": 0.0417,
+      "losses": 0,
+      "disposal": 0.013
+    },
+    "total": 0.3733,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 35개 kg당 중앙값(제조전·제조·폐기) + P&N 'Other Vegetables' 유통 대용",
+    "components": [],
+    "note": "제품 예: EVERYDAY 산수 [0.33L] 0.25; 유어스 지리산 맑은 샘물[500mL] 0.20; 오늘의차 옥수수수염차[500mL,PET] 0.43; 오늘의차 황금보리[500mL,PET] 0.43; 오늘의차 아침헛개[500mL,PET] 0.42; 산수[18.9L] 0.02 | 차 음료·생수 EPD 기준"
+  },
+  "유음료": {
+    "std": "유음료",
+    "category": "음료",
+    "stages": {
+      "luc": 0,
+      "farm": 0.5465,
+      "feed": 0,
+      "processing": 0.1455,
+      "transport": 0.0932,
+      "retail": 0.2651,
+      "packaging": 0.1002,
+      "losses": 0,
+      "disposal": 0.022
+    },
+    "total": 1.1725,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 8개 kg당 중앙값(제조전·제조·폐기) + P&N 'Milk' 유통 대용",
+    "components": [],
+    "note": "제품 예: 칸타타 콘트라베이스 콜드브루 블랙[500mL,PET] 0.41; 칸타타 콘트라베이스 콜드브루 스위트블랙[500mL,PET] 0.41; 빙그레 딸기맛 우유[240ml] 0.68; 빙그레 바나나맛 우유[240ml, PS] 0.81; 빙그레 바나나맛 우유 Light[240ml, PS] 0.81; 칸타타 프리미엄 라떼[275mL,CAN] 0.92"
+  },
+  "기타음료": {
+    "std": "기타음료",
+    "category": "음료",
+    "stages": {
+      "luc": 0,
+      "farm": 0.242,
+      "feed": 0,
+      "processing": 0.081,
+      "transport": 0.7945,
+      "retail": 0.0367,
+      "packaging": 0.0843,
+      "losses": 0,
+      "disposal": 0.027
+    },
+    "total": 1.2655,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 13개 kg당 중앙값(제조전·제조·폐기) + P&N 'Cane Sugar' 유통 대용",
+    "components": [],
+    "note": "제품 예: 칠성사이다 [500mL,PET] 0.38; 칠성사이다 [300mL,PET] 0.57; 칠성사이다 [300mL,ECO PET] 0.55; 코카-콜라 제로 [1.5L, PET] 0.26; 코카-콜라 제로 [500mL, PET] 0.35; 칠성사이다 [1.5L,PET] 0.27"
+  },
+  "떡류": {
+    "std": "떡류",
+    "category": "가공식품",
+    "stages": {
+      "luc": -0.012,
+      "farm": 1.94,
+      "feed": 0,
+      "processing": 0.0356,
+      "transport": 0.0522,
+      "retail": 0.0346,
+      "packaging": 0.0458,
+      "losses": 0.3338,
+      "disposal": 0
+    },
+    "total": 2.43,
+    "quality": "group_mean",
+    "sigma": 0.35,
+    "sources": [
+      "S003",
+      "S001"
+    ],
+    "basis": "한국 식품군 평균 'Cereals' 2.43 kgCO2e/kg(전체 시스템)을 P&N 'Rice' 단계 비율로 배분 (국내 자료 우선)",
+    "components": [],
+    "note": "P&N 전세계 평균 총량 4.45 → 국내 식품군 평균 2.43로 대체; 쌀 + 가공"
+  },
+  "식빵·기본빵": {
+    "std": "식빵·기본빵",
+    "category": "",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "밀 + 제빵"
+  },
+  "제과·페이스트리": {
+    "std": "제과·페이스트리",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "밀·유지·계란 혼합"
+  },
+  "복합빵·조리빵": {
+    "std": "복합빵·조리빵",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "복합"
+  },
+  "만두류": {
+    "std": "만두류",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "밀피 + 돈육·채소 소"
+  },
+  "튀김·완제품": {
+    "std": "튀김·완제품",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0,
+      "farm": 0.992,
+      "feed": 0,
+      "processing": 2.647,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0,
+      "disposal": 0.076
+    },
+    "total": 3.9832,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 3개 kg당 중앙값(제조전·제조·폐기) + P&N 'Wheat & Rye' 유통 대용",
+    "components": [],
+    "note": "제품 예: 피코크 묵은지 김치전(390g) 3.72; 피코크 수미 감자전(420g) 4.44; 피코크 순희네 빈대떡(400g) 3.51"
+  },
+  "시리얼": {
+    "std": "시리얼",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.4752,
+      "farm": 0.7173,
+      "feed": 0,
+      "processing": 0.0783,
+      "transport": 0.0904,
+      "retail": 0.0393,
+      "packaging": 0.0903,
+      "losses": 0.2108,
+      "disposal": 0
+    },
+    "total": 1.7016,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Maize' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "과자·디저트": {
+    "std": "과자·디저트",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0,
+      "farm": 1.571,
+      "feed": 0,
+      "processing": 0.549,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0,
+      "disposal": 0.307
+    },
+    "total": 2.6952,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 13개 kg당 중앙값(제조전·제조·폐기) + P&N 'Wheat & Rye' 유통 대용",
+    "components": [],
+    "note": "제품 예: 사또밥[67g] 2.40; 버터갈릭 팝콘[60g] 2.89; 영화관 팝콘[70g] 2.42; 장성규의 선 넘은 팝콘[100g] 2.68; 우유크림 팝콘[65g] 2.43; 치즈카라멜 팝콘[40g] 2.67"
+  },
+  "묵": {
+    "std": "묵",
+    "category": "가공식품",
+    "stages": {
+      "luc": -3.2578,
+      "farm": 3.3744,
+      "feed": 0,
+      "processing": 0.0514,
+      "transport": 0.1067,
+      "retail": 0.0426,
+      "packaging": 0.1237,
+      "losses": -0.008,
+      "disposal": 0
+    },
+    "total": 0.433,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Nuts' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "도토리·전분"
+  },
+  "당면": {
+    "std": "당면",
+    "category": "면류",
+    "stages": {
+      "luc": -0.0013,
+      "farm": 0.1931,
+      "feed": 0,
+      "processing": 0,
+      "transport": 0.0939,
+      "retail": 0.0392,
+      "packaging": 0.0445,
+      "losses": 0.0907,
+      "disposal": 0
+    },
+    "total": 0.4601,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Potatoes' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": "전분면"
+  },
+  "밀면류": {
+    "std": "밀면류",
+    "category": "면류",
+    "stages": {
+      "luc": 0.0971,
+      "farm": 0.8203,
+      "feed": 0,
+      "processing": 0.2101,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0.1779,
+      "disposal": 0
+    },
+    "total": 1.5736,
+    "quality": "direct",
+    "sigma": 0.3,
+    "sources": [
+      "S001"
+    ],
+    "basis": "P&N 2018 'Wheat & Rye' 단계별 값 (전세계 평균)",
+    "components": [],
+    "note": ""
+  },
+  "라면": {
+    "std": "라면",
+    "category": "면류",
+    "stages": {
+      "luc": 0,
+      "farm": 0.983,
+      "feed": 0,
+      "processing": 0.3085,
+      "transport": 0.1254,
+      "retail": 0.056,
+      "packaging": 0.0868,
+      "losses": 0,
+      "disposal": 0.0655
+    },
+    "total": 1.6252,
+    "quality": "direct_product",
+    "sigma": 0.2,
+    "sources": [
+      "S005",
+      "S001"
+    ],
+    "basis": "환경성적표지 인증 제품 4개 kg당 중앙값(제조전·제조·폐기) + P&N 'Wheat & Rye' 유통 대용",
+    "components": [],
+    "note": "제품 예: 진라면 순한맛(120g) 1.37; 진라면 매운맛(120g) 1.31; 삼양라면[120g] 1.45; 불닭볶음면[140g] 1.30"
+  },
+  "조리완제품": {
+    "std": "조리완제품",
+    "category": "가공식품",
+    "stages": {
+      "luc": 0.0792,
+      "farm": 1.2129,
+      "feed": 0.0623,
+      "processing": 0.2008,
+      "transport": 0.0535,
+      "retail": 0.0187,
+      "packaging": 0.1413,
+      "losses": 0.1614,
+      "disposal": 0
+    },
+    "total": 1.9301,
+    "quality": "pending",
+    "sigma": 0.6,
+    "sources": [
+      "S001",
+      "S002"
+    ],
+    "basis": "밥류 조리완제품(주먹밥·김밥·볶음밥·컵밥 제품, 조리 후 중량 기준) 배합 가정: 건조 쌀 35%·돈육 5%·채소 10%·김 2%·유지 3% + 가공 0.15·포장 0.10",
+    "components": [
+      {
+        "share": 0.35,
+        "label": "쌀",
+        "total": 2.43
+      },
+      {
+        "share": 0.05,
+        "label": "돼지고기",
+        "total": 13.0544
+      },
+      {
+        "share": 0.1,
+        "label": "기타채소",
+        "total": 0.5321
+      },
+      {
+        "share": 0.02,
+        "label": "김·해조류",
+        "total": 0.5899
+      },
+      {
+        "share": 0.03,
+        "label": "식용유",
+        "total": 3.73
+      }
+    ],
+    "note": "쌀 계수는 건조 곡물 kg 기준이므로 조리 후 제품에는 수분(약 60%)을 뺀 배합으로 적용"
+  },
+  "육류(불명)": {
+    "std": "육류(불명)",
+    "category": "육류",
+    "stages": {
+      "luc": 0.6508,
+      "farm": 9.7496,
+      "feed": 1.2466,
+      "processing": 0.5182,
+      "transport": 0.2022,
+      "retail": 0.0806,
+      "packaging": 0.1254,
+      "losses": 0.481,
+      "disposal": 0
+    },
+    "total": 13.0544,
+    "quality": "proxy",
+    "sigma": 0.45,
+    "sources": [
+      "S002",
+      "S001"
+    ],
+    "basis": "축종 불명 육류 → 돼지고기(자급률 혼합) 대용",
+    "components": [
+      {
+        "share": 0.71,
+        "label": "국내산 돼지고기 (S002) 비중 71%",
+        "total": 13.36
+      },
+      {
+        "share": 0.29,
+        "label": "수입산 대용: P&N 'Pig Meat' 비중 29%",
+        "total": 12.306
+      }
+    ],
+    "note": "",
+    "variants": {
+      "국내산": {
+        "std": "돼지고기",
+        "category": "육류",
+        "stages": {
+          "luc": 0,
+          "farm": 12.72,
+          "feed": 0,
+          "processing": 0.56,
+          "transport": 0.08,
+          "retail": 0,
+          "packaging": 0,
+          "losses": 0,
+          "disposal": 0
+        },
+        "total": 13.36,
+        "quality": "direct",
+        "sigma": 0.3,
+        "sources": [
+          "S002"
+        ],
+        "basis": "국내산(한우/한돈/국내 육계) 단일값",
+        "components": [],
+        "note": ""
+      }
+    }
+  }
+}

@@ -3,6 +3,8 @@
 구내식당 점심 메뉴의 CO₂e(온실가스 배출량)를 메뉴 이름으로 계산해 보여 주는 웹페이지입니다.
 첫 화면에서 사용 목적을 고르면 그 목적에 필요한 화면만 열립니다.
 
+다른 학교·기관·회사도 같은 방식으로 만들 수 있도록 코드, 공개 데이터, 제작 문서를 함께 공개합니다.
+
 **[사이트 열기 →](https://andyson114.github.io/pulcourse_new/)**
 
 ## 사용 목적별 구성
@@ -51,9 +53,61 @@ https://andyson114.github.io/pulcourse_new/?a=김치볶음밥&b=순두부찌개&
 - `d`: 입장 화면에 보일 날짜 문구(선택).
 - 데이터에서 찾을 수 없는 이름이면 기본 메뉴(소고기국밥, 시래기국)로 열립니다.
 
+## 공개 자료
+
+| 자료 | 위치 | 내용 |
+|---|---|---|
+| 제작 가이드 | [docs/BUILD_GUIDE.md](docs/BUILD_GUIDE.md) | 파일 구조, 풀기·고치기·다시 묶기, 내 식당 데이터로 바꾸기, 배포 |
+| 데이터 설명서 | [docs/DATA.md](docs/DATA.md) | 계산 데이터 항목별 구조·단위·공개 범위, 내 데이터로 채우는 법 |
+| 계산 방법 | [docs/METHODOLOGY.md](docs/METHODOLOGY.md) | 1인분 CO₂e와 1년 효과를 구하는 식, 한계, 출처 |
+| 공개 데이터 | [data/](data/) | 재료 130종 배출계수(JSON·CSV), 계산 파라미터 19개, 출처 12개, 메뉴 이름 해석 사전 |
+| 소스 | [src/build/](src/build/) · [src/readable/](src/readable/) | 앱을 푼 조각(뼈대·코드·글꼴·그림)과 읽기용 코드 |
+| 도구 | [tools/](tools/) | 풀기(`unpack.py`), 묶기(`pack.py`), 비교(`verify.py`), 공개 데이터 내보내기(`export_public_data.py`) |
+
+배출계수 표는 엑셀에서 바로 열 수 있습니다: [data/emission_factors.csv](data/emission_factors.csv)
+
+## 직접 만들어 보기
+
+Python 3만 있으면 됩니다(추가 설치 없음).
+
+```bash
+# 1. 조각을 고친 뒤 다시 묶기 (계산 데이터는 직접 준비한 파일을 지정)
+python3 tools/pack.py src/build index.html --payload my_payload.json
+
+# 2. 이전 파일과 비교해 바뀐 조각만 확인
+python3 tools/verify.py before.html index.html
+```
+
+계산 데이터 가운데 레시피 분량처럼 공개하지 않은 부분은 직접 준비해야 합니다. 필요한 형식과 최소 구성은 [데이터 설명서](docs/DATA.md)에, 전체 순서는 [제작 가이드](docs/BUILD_GUIDE.md)에 있습니다.
+
+## 데이터 공개 범위
+
+| 구분 | 항목 | 출처 |
+|---|---|---|
+| 공개 | 배출계수, 계산 파라미터, 출처 목록, 메뉴 이름 해석 규칙·사전 | 논문·국가 통계·IPCC 등 공개 자료(S001~S011)와 팀이 만든 규칙 |
+| 비공개 | 레시피 분량 분포, 조리법별 템플릿, 메뉴 빈도, 연령·기관별 분량 배율, 제품명 단어 | 급식회사 내부 조리지침서(S012) |
+
+비공개 항목은 파일로 내보내지 않았고, 구조만 [데이터 설명서](docs/DATA.md)에서 설명합니다.
+
+## 라이선스
+
+| 대상 | 조건 |
+|---|---|
+| 코드 (`index.html`의 스크립트, `src/`, `tools/`) | [MIT](LICENSE) |
+| 데이터·문서 (`data/`, `docs/`) | [CC BY 4.0](LICENSE-DATA.md) — 출처를 밝히면 자유롭게 사용 |
+| 글꼴 (Noto Sans KR) | [SIL OFL 1.1](src/build/fonts/OFL.txt) |
+| 기관·기업 로고 | 각 소유자의 표장으로 라이선스 대상 아님 |
+
+원출처 자료의 이용 조건과 그림·로고 정보는 [NOTICE.md](NOTICE.md)에 있습니다.
+
 ## 파일 구성
 
-| 파일 | 내용 |
-|---|---|
-| `index.html` | 앱 전체. 데이터·코드·폰트·이미지가 모두 들어 있는 단일 파일입니다. |
-| `docs/` | 이 README에 쓰인 흐름도(SVG) |
+```
+index.html              앱 전체(단일 파일) — GitHub Pages로 배포
+docs/                   제작 가이드·데이터 설명서·계산 방법, 흐름도(SVG)
+data/                   공개 데이터(JSON·CSV)와 목록(MANIFEST.json)
+src/build/              index.html을 푼 조각(뼈대·코드·글꼴·그림)
+src/readable/           읽기용 코드(engine·dash·app)
+tools/                  풀기·묶기·비교·데이터 내보내기 도구
+LICENSE, LICENSE-DATA.md, NOTICE.md
+```

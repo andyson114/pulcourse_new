@@ -1,0 +1,233 @@
+
+/* 사용 목적 선택 레이어와 한 달 식단(새로 만든 부분)만의 스타일. 강조색은 초록 하나만 쓴다. */
+:root{
+  --rh-font:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --rh-ink:#2B3037;          /* 본문 차콜 */
+  --rh-sub:#555E69;
+  --rh-muted:#7A838E;
+  --rh-line:#E1E4E8;
+  --rh-bg:#F7F8F9;
+  --rh-accent:#3F7A1C;       /* 강조색(초록) */
+  --rh-accent-bg:#EEF5E6;
+  --rh-radius:6px;
+  --rh-focus:0 0 0 3px rgba(63,122,28,.35);
+}
+#roleHub,#monthCal,.rh-hero,.rh-badge,#dash.rh-hub .dtitle{font-family:var(--rh-font)}
+#monthCal :focus-visible,.rh-hero :focus-visible,.rh-badge:focus-visible{outline:2px solid var(--rh-accent);outline-offset:2px}
+
+/* ── 첫 화면: 사용 목적 선택(v2 디자인) ─────────────── */
+#roleHub [data-role=nutri]{--rc:#4C8820;--rc-soft:#EEF7E2;--rc-ink:#2F5A12}
+#roleHub [data-role=corp]{--rc:#2A78D6;--rc-soft:#E8F1FC;--rc-ink:#1D4F91}
+#roleHub [data-role=user]{--rc:#D98A00;--rc-soft:#FFF3DC;--rc-ink:#8A5A00}
+#roleHub [data-role=all]{--rc:#6B7684;--rc-soft:#F2F4F6;--rc-ink:#4E5968}
+
+#roleHub{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:24px;overflow:auto;
+  background:rgba(252,247,240,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:1;transition:opacity .3s}
+#roleHub[hidden]{display:none}
+#roleHub.leaving{opacity:0;pointer-events:none}
+.rh-sheet{width:min(1080px,100%);background:#fff;border-radius:32px;box-shadow:0 24px 64px rgba(25,31,40,.22);
+  padding:40px 40px 32px;animation:rhIn .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes rhIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rh-head{text-align:center}
+.rh-head .logo-partnership{height:30px;margin:0 auto 18px}
+.rh-head h1{font-size:36px;line-height:1.3;font-weight:900;letter-spacing:-.03em}
+.rh-head p{margin-top:8px;font-size:17px;color:var(--sub)}
+.rh-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}
+
+.rh-card{position:relative;display:flex;flex-direction:column;border:1.5px solid var(--line);border-radius:24px;
+  background:#fff;padding:22px 22px 20px;cursor:pointer;font:inherit;color:inherit;text-align:left;overflow:hidden;
+  transition:border-color .15s,box-shadow .2s,transform .12s}
+.rh-card::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:var(--rc);opacity:0;transition:opacity .15s}
+.rh-card:hover,.rh-card:focus-visible{border-color:var(--rc);box-shadow:0 12px 30px rgba(25,31,40,.10);outline:0;transform:translateY(-2px)}
+.rh-card:hover::before,.rh-card:focus-visible::before{opacity:1}
+.rh-card:active{transform:scale(.985)}
+.rh-top{display:flex;align-items:center;gap:10px}
+.rh-ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:23px;background:var(--rc-soft);flex:none}
+.rh-purpose{font-size:14px;font-weight:700;color:var(--rc-ink);background:var(--rc-soft);border-radius:8px;padding:4px 10px}
+.rh-go{margin-left:auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:20px;line-height:1;
+  color:var(--muted);background:var(--tile);transition:background .15s,color .15s,transform .15s}
+.rh-card:hover .rh-go,.rh-card:focus-visible .rh-go,.rh-all:hover .rh-go,.rh-all:focus-visible .rh-go{background:var(--rc);color:#fff;transform:translateX(2px)}
+.rh-who{display:block;margin-top:18px;font-size:30px;line-height:1.2;font-weight:700;letter-spacing:-.03em;color:var(--text)}
+.rh-desc{margin-top:8px;font-size:15px;color:var(--sub);line-height:1.6;min-height:3.2em}
+.rh-mods{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.rh-mods span{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:var(--sub)}
+.rh-mods i{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;
+  color:var(--rc-ink);background:var(--rc-soft)}
+
+.rh-all{margin-top:16px;display:flex;align-items:center;gap:14px;width:100%;text-align:left;
+  border:1.5px solid var(--line);border-radius:20px;background:var(--tile);padding:14px 18px;cursor:pointer;font:inherit;color:inherit;
+  transition:background .15s,border-color .15s}
+.rh-all:hover,.rh-all:focus-visible{background:#fff;border-color:var(--rc);outline:0}
+.rh-all .rh-ic{width:40px;height:40px;font-size:20px;background:#fff}
+.rh-all-t{display:flex;flex-direction:column;gap:2px}
+.rh-all-t b{font-size:17px;font-weight:700}
+.rh-all-t small{font-size:14px;color:var(--muted)}
+
+@media (max-width:900px){
+  .rh-cards{grid-template-columns:1fr}
+  .rh-desc{min-height:0}
+}
+body.mobile .rh-cards{grid-template-columns:1fr;gap:10px;margin-top:16px}
+body.mobile .rh-card{display:grid;grid-template-columns:44px minmax(0,1fr) auto;column-gap:12px;row-gap:2px;align-items:center;padding:14px 14px 14px 16px;border-radius:20px}
+body.mobile .rh-top{display:contents}
+body.mobile .rh-ic{grid-column:1;grid-row:1/span 3;align-self:start}
+body.mobile .rh-purpose{grid-column:2;grid-row:1;justify-self:start;font-size:12px;padding:2px 8px}
+body.mobile .rh-go{grid-column:3;grid-row:1/span 3;margin:0}
+body.mobile .rh-mods{grid-column:2;grid-row:3;margin-top:6px;padding-top:0;border-top:0;gap:4px 10px}
+body.mobile .rh-mods span{font-size:13px}
+body.mobile .rh-mods i{width:18px;height:18px;font-size:11px}
+body.mobile #roleHub{place-items:end center;padding:0}
+body.mobile .rh-sheet{border-radius:28px 28px 0 0;padding:22px 16px calc(20px + env(safe-area-inset-bottom,0))}
+body.mobile .rh-head .logo-partnership{height:22px;margin-bottom:10px}
+body.mobile .rh-head h1{font-size:24px}
+body.mobile .rh-head p{font-size:14px;margin-top:4px}
+body.mobile .rh-who{grid-column:2;grid-row:2;margin-top:4px;font-size:21px}
+body.mobile .rh-desc{display:none}
+body.mobile .rh-all{margin-top:10px;padding:12px 14px;border-radius:18px}
+body.mobile .rh-all-t b{font-size:16px}
+body.mobile .rh-all-t small{font-size:12px}
+
+/* ── 목적 표시 · 목적 바꾸기 ─────────────────────── */
+.rh-badge{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px;border:1px solid var(--rh-line);border-radius:var(--rh-radius);
+  background:#fff;color:var(--rh-sub);font-size:13.5px;font-weight:500;white-space:nowrap;cursor:pointer}
+.rh-badge:hover{border-color:#C9CED4;color:var(--rh-ink)}
+.rh-badge b{font-weight:700;color:var(--rh-ink)}
+.rh-badge[hidden]{display:none}
+/* 교육 화면 상단 바: 왼쪽 제목은 한 줄, 오른쪽에 이전 + 목적 바꾸기 */
+.brand{min-width:0;max-width:100%}
+.brand-t{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hud-r{grid-column:3;justify-self:end;display:flex;align-items:center;gap:8px}
+.hud .rh-badge{height:44px;padding:0 16px;gap:8px;border:0;border-radius:14px;background:rgba(255,255,255,.88);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:15px;color:var(--text)}
+.hud .rh-badge:hover{background:#fff;color:var(--text)}
+.hud .rh-badge .rh-role{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--rh-muted)}
+.hud .rh-badge .rh-role::after{content:"";width:1px;height:14px;background:#D5D9DE}
+@media (max-width:1100px){.hud .rh-badge .rh-role{display:none}}
+.dhead-in .rh-badge{height:38px;padding:0 12px;flex:none}
+#dash.rh-hub .dclose{display:none}
+#dash.rh-hub .dtitle .rh-dt{display:flex;flex-direction:column;line-height:1.25}
+#dash.rh-hub .dtitle .rh-dt b{font-size:17px;font-weight:700;color:var(--rh-ink)}
+#dash.rh-hub .dtitle .rh-dt small{font-size:12.5px;font-weight:500;color:var(--rh-muted)}
+
+/* ── 한 달 식단 / 대시보드: 시뮬레이터 화면 하나를 두 가지로 보여 주기 ── */
+#pane-sim .rh-hero{display:none}
+#dash[data-view=month] #pane-sim .dhero:not(.rh-hero),#dash[data-view=board] #pane-sim .dhero:not(.rh-hero){display:none}
+#dash[data-view=month] #pane-sim .rh-hero.m,#dash[data-view=board] #pane-sim .rh-hero.b{display:block}
+#dash[data-view=month] #simKpi,#dash[data-view=month] #pane-sim .simTop,#dash[data-view=month] #simScen{display:none}
+#dash[data-view=board] #monthCal{display:none}
+#monthCal{display:none}
+#dash[data-view=month] #monthCal{display:block}
+
+.rh-hero{margin:0 0 20px;max-width:760px;color:var(--rh-ink)}
+.rh-hero h2{font-size:24px;line-height:1.35;font-weight:700;letter-spacing:-.02em}
+.rh-hero p{margin-top:6px;font-size:15px;line-height:1.6;color:var(--rh-sub)}
+.rh-link{display:inline-block;margin-top:8px;padding:4px 0;border:0;background:none;cursor:pointer;font:inherit;
+  font-size:14.5px;font-weight:700;color:var(--rh-accent)}
+.rh-link:hover{text-decoration:underline;text-underline-offset:3px}
+.rh-link[hidden]{display:none}
+
+/* 한 달 식단 배치: 넓은 화면은 왼쪽 조절 막대 + 오른쪽 결과·달력, 좁은 화면은 막대 → 결과 → 달력 */
+#dash[data-view=month] #pane-sim.on{display:flex;flex-direction:column}
+#dash[data-view=month] #pane-sim .rh-hero.m{order:0}
+#dash[data-view=month] #simBoard{order:1;margin-bottom:20px}
+#dash[data-view=month] #monthCal{order:2}
+@media (min-width:1101px){
+  body:not(.mobile) #dash[data-view=month] #pane-sim.on{display:grid;grid-template-columns:300px minmax(0,1fr);
+    grid-template-areas:"hero hero" "board cal";column-gap:24px;align-items:start}
+  body:not(.mobile) #dash[data-view=month] .rh-hero.m{grid-area:hero}
+  body:not(.mobile) #dash[data-view=month] #monthCal{grid-area:cal;min-width:0}
+  body:not(.mobile) #dash[data-view=month] #simBoard{grid-area:board;grid-template-columns:1fr;gap:10px;margin:0}
+}
+#dash[data-view=month] #simBoard .lgroup{padding:12px 16px 4px;border-radius:8px;border-top-width:3px}
+#dash[data-view=month] #simBoard .lever{padding:10px 0 6px}
+#dash[data-view=month] #simBoard .lever .lv{font-size:18px}
+
+/* 결과: 가장 중요한 1년 효과를 먼저, 세부 수치는 옆에 작게 */
+.mc-result{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);background:#fff;
+  border:1px solid var(--rh-line);border-radius:8px;margin-bottom:16px;color:var(--rh-ink)}
+.mc-result>div{padding:16px 20px;min-width:0}
+.mc-result>div+div{border-left:1px solid var(--rh-line)}
+.mc-result dt{font-size:13.5px;color:var(--rh-sub)}
+.mc-result dd{margin:4px 0 0}
+.mc-result .num{font-size:22px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mc-result .num small{font-size:13px;font-weight:500;color:var(--rh-sub);margin-left:3px}
+.mc-result .note{display:block;margin-top:2px;font-size:13px;color:var(--rh-muted)}
+.mc-result .main .num{font-size:30px}
+.mc-result .main.down .num{color:var(--rh-accent)}
+.mc-result .main.up .num{color:#C8352A}
+.mc-result .main.down .note b{color:var(--rh-accent)}
+.mc-result .main.up .note b{color:#C8352A}
+
+/* 달력(표) */
+.mc-cal{background:#fff;border:1px solid var(--rh-line);border-radius:8px;padding:18px 20px 16px;color:var(--rh-ink)}
+.mc-cal h3{font-size:17px;font-weight:700}
+.mc-cal .mc-sub{margin-top:4px;font-size:13.5px;line-height:1.55;color:var(--rh-sub)}
+.mc-legend{display:flex;flex-wrap:wrap;gap:4px 14px;margin:10px 0 12px;font-size:12.5px;color:var(--rh-muted)}
+.mc-legend .k-beef{color:#C8352A;font-weight:700}
+.mc-legend .k-meat{color:#4a3aa7;font-weight:700}
+.mc-legend .k-alt{color:var(--rh-accent);font-weight:700}
+.mc-legend i{display:inline-block;width:14px;height:5px;border-radius:2px;margin-right:4px;vertical-align:2px}
+.mc-scroll{overflow-x:auto}
+.mc-table{width:100%;min-width:680px;border-collapse:collapse;table-layout:fixed}
+.mc-table th{font-size:12.5px;font-weight:700;color:var(--rh-muted);text-align:left;padding:6px 8px}
+.mc-table thead th{border-bottom:1px solid var(--rh-line)}
+.mc-table th[scope=row]{width:40px;vertical-align:top;padding-top:10px;position:sticky;left:0;z-index:1;background:#fff}
+.mc-table thead th:first-child{width:40px;position:sticky;left:0;z-index:1;background:#fff}
+.mc-table td{vertical-align:top;padding:8px 8px 10px;border-bottom:1px solid var(--rh-line);border-left:1px solid var(--rh-line)}
+.mc-table tbody tr:last-child td,.mc-table tbody tr:last-child th{border-bottom:0}
+.mc-table td.chg{background:#F5F9F0}
+.mc-table td.veg{background:var(--rh-accent-bg)}
+.mc-date{display:flex;justify-content:space-between;gap:4px;margin-bottom:4px;font-size:12px;color:var(--rh-muted)}
+.mc-tag{font-weight:700;color:var(--rh-accent)}
+.mc-m{font-size:13.5px;line-height:1.45;word-break:keep-all;overflow-wrap:anywhere}
+.mc-m.side{font-size:12px;color:var(--rh-muted)}
+.mc-m.beef{color:#C8352A;font-weight:700}
+.mc-m.pork,.mc-m.poultry{color:#4a3aa7;font-weight:700}
+.mc-m.off{text-decoration:line-through;opacity:.55}
+.mc-alt{display:block;overflow-wrap:anywhere;font-size:12px;line-height:1.4;font-weight:700;color:var(--rh-accent)}
+.mc-alt em{font-style:normal;font-weight:500;color:var(--rh-muted)}
+.mc-v{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+.mc-bar{flex:1;height:4px;border-radius:2px;background:#E8EAED;overflow:hidden}
+.mc-bar b{display:block;height:100%;background:var(--bc,#8B95A1)}
+.mc-v s{font-weight:500;color:var(--rh-muted)}
+.mc-note{max-width:760px;margin-top:12px;font-size:12.5px;line-height:1.6;color:var(--rh-muted)}
+
+/* ── 좁은 화면 · 모바일 ─────────────────────────── */
+@media (max-width:900px){
+  .mc-result{grid-template-columns:1fr 1fr}
+  .mc-result .main{grid-column:1/-1;border-bottom:1px solid var(--rh-line)}
+  .mc-result>div+div{border-left:0}
+  .mc-result>div:last-child{border-left:1px solid var(--rh-line)}
+}
+body.mobile .brand-t{display:none}
+body.mobile .hud-r{gap:6px}
+body.mobile .back:not(.show){display:none}
+body.mobile .hud .rh-badge{height:36px;padding:0 12px;font-size:13px;border-radius:12px}
+body.mobile .dhead-in .rh-badge{height:34px;padding:0 10px;font-size:12.5px}
+body.mobile #dash.rh-hub .dtitle .rh-dt{display:none}
+body.mobile .rh-hero h2{font-size:20px}
+body.mobile .rh-hero p{font-size:14px}
+body.mobile .mc-result .main .num{font-size:24px}
+body.mobile .mc-result .num{font-size:18px}
+body.mobile .mc-result>div{padding:12px 14px}
+body.mobile .mc-cal{padding:14px 12px 12px}
+@media (prefers-reduced-motion:reduce){#roleHub{transition:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* 페이지를 처음 열 때 그릇이 화면 왼쪽 위에서 날아드는 전환을 끈다(첫 배치 뒤 RoleHub.init 에서 해제) */
+body.rh-still .bowl,body.rh-still .on-stage,body.rh-still .mbowl{transition:none!important}
+
+/* 대시보드 탭 줄: 옆으로 더 넘길 탭이 있으면 그쪽 가장자리를 살짝 흐리게 */
+#dtabs.fade-r{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}
+#dtabs.fade-l{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px);mask-image:linear-gradient(to right,transparent,#000 36px)}
+#dtabs.fade-l.fade-r{-webkit-mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,transparent,#000 36px,#000 calc(100% - 36px),transparent)}
+
+/* 부제목: 넓은 화면은 한 줄, 모바일은 질문 뒤에서 줄바꿈 */
+.rh-mbr{display:none}
+body.mobile .rh-mbr{display:inline}
+body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
+
+/* 목적 카드의 모듈 목록(메뉴 교환 · 한 달 식단 등)은 보이지 않게 한다.
+   요소와 카드 배치 구조는 그대로 두고 높이만 0으로 접는다(삭제했을 때 아이폰에서 터치가 안 된 적이 있어 구조를 바꾸지 않음) */
+.rh-mods{visibility:hidden;height:0;min-height:0;margin:0!important;padding:0!important;border:0!important;overflow:hidden}

@@ -1,0 +1,22 @@
+{
+  "source": "index.html",
+  "source_sha256": "9aa67da3206d5ef0cdd85f57dbaff60547ea14aeb39a7a567e629f4e1aa41e59",
+  "files": {
+    "app.bundle.js": "f0dd8f8875ea88ba0f3370da862c8f4d93feba2b953c427b0742ead07b1bac9b",
+    "fonts/f500.woff2": "55e4770d18e5beed738c1effb2a68e18f468f663a14ec2bb4352d57eb79824f0",
+    "fonts/f700.woff2": "581d0ecbd392c365cd2e8f31b34c36967cef7bddab9a80d840fcfebc54762fb9",
+    "fonts/f900.woff2": "634de76ced64d4964582f706f1a44d818dc646bc7df000557a16f93790b584cf",
+    "restaurant.svg": "48f97644dde1d981f3b4565a7675eb1e9130c02cf23b2489a867790e49cc26c7",
+    "rolehub.css": "fa00f323c6b119420ab0fe848465e657852d059a5bbf41f973d5a44a5f66c7c0",
+    "rolehub.js": "550fb98d48662ece7fdf053eb35801ac754642c812c3be91ac0ee7b157292d5b",
+    "assets/1ec47fcdad.png": "1ec47fcdad520b13e065814153c768e7b0e35cf262666b9da59a6fd87d34c6dd",
+    "assets/a92181de85.png": "a92181de85a7e2ac8cc4e42553c04ba715a738ea0f8f8d2c8399b9718b74df3d",
+    "assets/9212ee11ca.png": "9212ee11cab2ac431f3a65e0223a23af1352c2159adea3c91fad580850f3ed07",
+    "assets/a61b5cb1cf.webp": "a61b5cb1cf8a9b808dc653febb47abdabd097a199729f392f82aca8ab169fb6d",
+    "assets/fd686e6752.webp": "fd686e6752c1049332a6e02698b9fc1f18f9fbe3f818a108aaf3a1ba10efdc45",
+    "assets/804fe002c3.webp": "804fe002c3641f331564f286348811d09c21e10a1dac91395dde1989670f3699",
+    "assets/5641ceae4e.webp": "5641ceae4eecbdbab6eec242005a875111d659e2a21b05d45ca85ac5888cf2b7",
+    "shell.html": "7b9c23b4f4fa2e45ba8526a6090c8ae60bd4b1e6f36639ee7e21ad22a6dedf18"
+  },
+  "note": "payload.json(계산 데이터 전체)은 내부 자료가 포함되어 공개하지 않습니다. 공개 데이터는 data/ 폴더, 형식은 docs/DATA.md 참고."
+}

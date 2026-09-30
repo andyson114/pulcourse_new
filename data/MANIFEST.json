@@ -1,0 +1,25 @@
+{
+  "설명": "지구를 지키는 점심 선택 — 공개 데이터 목록. 자세한 설명은 docs/DATA.md",
+  "라이선스": "CC BY 4.0 (각 출처 자료의 이용 조건은 sources.json 참고)",
+  "공개": {
+    "emission_factors.json": "재료 130종의 1kg당 배출계수(단계별)",
+    "parameters.json": "계산 파라미터 19개",
+    "sources.json": "출처 12개(내부 자료 1개는 비공개로 표시)",
+    "dictionary/tokens.json": "메뉴 이름 해석 단어 899개(제품명 56개 제외)",
+    "dictionary/alias.json": "재료 동의어 591개",
+    "dictionary/methods.json": "조리법 189개",
+    "dictionary/std_category.json": "재료 분류 126개",
+    "dictionary/rules.json": "메뉴 해석 규칙"
+  },
+  "제외": {
+    "recipes": "메뉴별 재료 1인분 분량 분포 — 내부 조리지침서(S012)에서 산출",
+    "templates": "조리법별 재료 구성 템플릿 — 내부 조리지침서(S012)에서 산출",
+    "core_index": "레시피 이름 색인 — recipes 의 메뉴 이름 목록",
+    "global_qty": "재료별 1인분 분량 분포 — 내부 조리지침서(S012)에서 산출",
+    "segments": "연령·기관별 분량 배율 — 대부분 내부 조리지침서(S012)에서 산출",
+    "complete_segments": "segments 와 짝을 이루는 목록",
+    "corpus": "메뉴 사용 빈도·기관별 배출 분포 — 내부 식단표(S012)에서 산출",
+    "meta": "내부 빌드 정보(건수·버전) — 공개판 목록은 MANIFEST.json 으로 대신함",
+    "tokens(제품명)": "내부 식단에서 모은 브랜드·제품명 단어 56개"
+  }
+}

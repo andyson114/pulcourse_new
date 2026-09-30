@@ -1,0 +1,20 @@
+﻿이름,값,단위,출처,품질,sigma,비고
+elec_kgco2e_per_kwh,0.4173,kgCO2e/kWh,S009,direct,0.05,2023년 국가 전력배출계수(공표 2025-12)
+gas_kgco2e_per_mj,0.0561,kgCO2e/MJ,S008,direct,0.05,"천연가스(도시가스) IPCC 기본값 56,100 kg/TJ"
+cooking_fuel_default,gas,,S008,assumption,0,가정: 단체급식 주방은 도시가스 조리 중심. UI에서 전기로 전환 가능
+cook_mj_per_kg,"{""끓임"": 3.5, ""조림"": 3.5, ""찜"": 3.5, ""데침"": 3.5, ""볶음"": 7.5, ""부침"": 7.5, ""튀김"": 7.5, ""구이"": 8.5, ""무가열"": 0, ""완제품"": 0, ""기타"": 3.5}",MJ/kg 재료,S006,proxy,0.4,"Foster et al.(2006) 가정용 조리 원단위. 재료 질량(물 제외) 기준 적용, 대량조리 하향 가능성"
+waste_rate,0.15,ratio of cooked mass,S011,proxy,0.3,국방부 추정(조리 대비 15%). 타 세그먼트 대용
+waste_treatment_kgco2e_per_kg,0.1756,kgCO2e/kg 습중량,S007,direct,0.5,"퇴비화 기본값(CH4 4 g + N2O 0.24 g, AR5). 사료화·혐기소화는 더 낮음"
+truck_kgco2e_per_tkm,0.192,kgCO2e/t·km,S002,direct,0.2,유통 참고값(P&N 유통값에 이미 포함되어 v1 계산에는 미사용)
+self_sufficiency_beef,0.42,ratio,S002,direct,0.05,2024 쇠고기 자급률
+self_sufficiency_pork,0.71,ratio,S002,direct,0.05,2024 돼지고기 자급률
+self_sufficiency_chicken,0.75,ratio,S002,direct,0.05,2024 닭고기 자급률
+imported_beef_shares,"{""US"": 0.47, ""AU"": 0.47, ""NZ"": 0.03}",ratio,S002,direct,0.05,2025 수입 쇠고기 국가별 비중(합 0.97 → 정규화)
+mil_kcal_per_day,3000,kcal/일,S010,direct,0,"군 급식 1일 기준 열량; 1끼 = 1,000 kcal"
+gwp,"{""CH4"": 28, ""N2O"": 265}",kgCO2e/kg,S002,direct,0,IPCC AR5 GWP-100 (방법론 결정)
+sigma_by_quality,"{""direct"": 0.3, ""direct_product"": 0.2, ""group_mean"": 0.35, ""proxy"": 0.45, ""pending"": 0.6, ""assumption"": 0.5}",lognormal σ,,assumption,0,"결정 5(출처 1개 계수 ±30% 잠정)를 로그정규 σ로 환산: direct 0.3, EPD 제품 0.2, 식품군 평균 0.35, 대용 0.45, 미확보 0.6"
+sigma_scale,0.15,lognormal σ,,assumption,0,세그먼트 배율 불확실성 가정 ±15%
+sigma_qty_default,0.35,lognormal σ,,assumption,0,분위수(p25·p75)가 없을 때의 분량 불확실성
+mc_iterations,2000,회,,assumption,0,몬테카를로 반복 수 기본값
+national_daily_kgco2e,5.08,kgCO2e/인·일,S003,direct,0,Hong & Kim 2025: 국민건강영양조사 기반 한국인 1인 1일 식생활 온실가스 배출량 평균(전체 식품 시스템)
+national_daily_kcal,2000,kcal/인·일,S003,assumption,0,벤치마크 환산용 대표 열량(가정)
