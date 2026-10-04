@@ -3,6 +3,8 @@
 
 사용법:  python3 tools/pack.py build/ index.html
          python3 tools/pack.py build/ index.html --payload 내_데이터.json   (계산 데이터를 바꿔 끼울 때)
+         python3 tools/pack.py src/build-en en/index.html --payload 내_데이터.json --base src/build
+           (--base: 조각 폴더에 없는 파일(글꼴·그림 등)은 이 폴더에서 읽는다. 영어판처럼 일부 조각만 바꾼 판을 묶을 때)
 압축은 gzip(최대 압축, 시각 정보 0)으로 해서 같은 조각이면 항상 같은 결과가 나온다.
 표준 라이브러리만 쓴다.
 """
@@ -21,18 +23,24 @@ def read(path, binary=False):
         return f.read()
 
 
-def main(src, out, payload_path=None):
-    html = read(os.path.join(src, "shell.html"))
-    payload = read(payload_path or os.path.join(src, "payload.json"))
+def main(src, out, payload_path=None, base=None):
+    def find(rel):
+        path = os.path.join(src, rel)
+        if base and not os.path.exists(path):
+            path = os.path.join(base, rel)
+        return path
+
+    html = read(find("shell.html"))
+    payload = read(payload_path or find("payload.json"))
     parts = {
         "PAYLOAD": gz_b64(payload),
-        "CODE": gz_b64(read(os.path.join(src, "app.bundle.js"))),
-        "RESTAURANT_SVG": read(os.path.join(src, "restaurant.svg")),
-        "ROLEHUB_CSS": read(os.path.join(src, "rolehub.css")),
-        "ROLEHUB_JS": read(os.path.join(src, "rolehub.js")),
+        "CODE": gz_b64(read(find("app.bundle.js"))),
+        "RESTAURANT_SVG": read(find("restaurant.svg")),
+        "ROLEHUB_CSS": read(find("rolehub.css")),
+        "ROLEHUB_JS": read(find("rolehub.js")),
     }
     for w in ("500", "700", "900"):
-        parts[f"F{w}"] = base64.b64encode(read(os.path.join(src, "fonts", f"f{w}.woff2"), True)).decode("ascii")
+        parts[f"F{w}"] = base64.b64encode(read(find(os.path.join("fonts", f"f{w}.woff2")), True)).decode("ascii")
 
     for name, value in parts.items():
         marker = f"@@{name}@@"
@@ -42,7 +50,7 @@ def main(src, out, payload_path=None):
 
     def asset(m):
         rel, mime = m.group(1), m.group(2)
-        return f"data:{mime};base64," + base64.b64encode(read(os.path.join(src, rel), True)).decode("ascii")
+        return f"data:{mime};base64," + base64.b64encode(read(find(rel), True)).decode("ascii")
 
     html = re.sub(r"@@ASSET:([^|@]+)\|([^@]+)@@", asset, html)
     left = re.findall(r"@@[A-Z_0-9:]+", html)
@@ -56,10 +64,18 @@ def main(src, out, payload_path=None):
 if __name__ == "__main__":
     args = sys.argv[1:]
     payload = None
+    base = None
     if "--payload" in args:
         i = args.index("--payload")
         payload = args[i + 1]
         del args[i:i + 2]
+    if "--base" in args:
+        i = args.index("--base")
+        base = args[i + 1]
+        del args[i:i + 2]
     if len(args) != 2:
-        raise SystemExit("사용법: python3 tools/pack.py build/ index.html [--payload 데이터.json]")
-    main(args[0], args[1], payload)
+        raise SystemExit("사용법: python3 tools/pack.py build/ index.html [--payload 데이터.json] [--base 기본조각폴더]")
+    out_dir = os.path.dirname(args[1])
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    main(args[0], args[1], payload, base)

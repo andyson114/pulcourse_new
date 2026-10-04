@@ -1,3 +1,5 @@
+**한국어** | [English](BUILD_GUIDE.en.md)
+
 # 제작 가이드
 
 이 문서는 '지구를 지키는 점심 선택'이 어떻게 만들어져 있는지 설명합니다. 다른 사람이 이 앱을 다시 만들거나 자기 식당에 맞게 고칠 때 필요한 순서도 함께 적었습니다.
@@ -137,6 +139,7 @@ index.html
 | 경로 | 내용 |
 |---|---|
 | `index.html` | 배포하는 앱. 모든 조각을 묶은 단일 파일입니다. |
+| `en/index.html` | 영어판 앱. `src/build-en/`의 조각과 `src/build/`의 공통 조각을 묶은 단일 파일입니다. |
 | `README.md` | 앱 소개 |
 | `LICENSE` | 코드 라이선스(MIT) |
 | `LICENSE-DATA.md` | 데이터·문서 라이선스(CC BY 4.0) |
@@ -152,6 +155,8 @@ index.html
 | `src/build/fonts/` | `f500.woff2`, `f700.woff2`, `f900.woff2`(Noto Sans KR 부분 글꼴)와 글꼴 라이선스 전문 `OFL.txt` |
 | `src/build/assets/` | 로고, 식판, 이야기 장면 그림 등 이미지 7개 |
 | `src/build/manifest.json` | 풀 때 기록한 조각 목록과 SHA-256 |
+| `src/build-en/` | 영어판에서 번역한 조각(`shell.html`, `app.bundle.js`, `rolehub.js`, `rolehub.css`). 나머지는 `src/build/`의 것을 씁니다([3-6](#3-6-영어판-묶기)). |
+| `README.en.md`, `NOTICE.en.md`, `docs/*.en.md`, `docs/flow-*.en.svg` | 영어 문서와 영어 흐름도 |
 | `src/readable/` | `engine.js`, `dash.js`, `app.js`. 코드를 읽기 좋게 정리한 사본입니다. **빌드에는 쓰지 않습니다.** |
 | `tools/unpack.py` | `index.html`을 조각으로 풉니다. |
 | `tools/pack.py` | 조각을 다시 `index.html`로 묶습니다. |
@@ -261,6 +266,27 @@ python3 tools/unpack.py index.html work/
   node --check src/build/app.bundle.js
   ```
 - `app.bundle.js`를 고치면 읽기용 사본과 달라집니다. 사본을 다시 맞추는 도구는 저장소에 없습니다.
+
+### 3-6. 영어판 묶기
+
+영어판 `en/index.html`은 번역한 조각과 한국어판의 공통 조각을 함께 묶어 만듭니다.
+
+| 폴더 | 들어 있는 것 |
+|---|---|
+| `src/build-en/` | 번역한 조각만: `shell.html`, `app.bundle.js`, `rolehub.js`, `rolehub.css` |
+| `src/build/` | 두 판이 함께 쓰는 나머지: `fonts/`, `assets/`, `restaurant.svg` |
+
+`pack.py`의 `--base` 옵션은 조각 폴더에 없는 파일을 지정한 폴더에서 읽습니다.
+
+```bash
+python3 tools/pack.py src/build-en en/index.html --payload my_payload.json --base src/build
+```
+
+- 계산 데이터는 한국어판과 같은 것을 씁니다. 그래서 두 판의 숫자가 같습니다.
+- 영어판은 `src/build-en/app.bundle.js` 맨 앞의 영어 이름 사전(`EN_NAMES`)으로 메뉴·재료 이름을 바꿔 보여 줍니다. 사전에 없는 이름은 한국어로 나옵니다. 메뉴를 늘리면 사전에도 영어 이름을 넣어 주세요.
+- 영어판 메뉴 고르기 상자와 주소의 `a`, `b`는 사전에 있는 영어 이름도 받습니다.
+- 두 판은 첫 화면 오른쪽 위 링크(English / 한국어)로 서로 이어집니다.
+- **두 판은 손으로 맞춥니다.** `src/build/`의 화면 조각을 고치면 `src/build-en/`의 같은 조각도 고친 뒤 두 판을 다시 묶어 주세요.
 
 ---
 

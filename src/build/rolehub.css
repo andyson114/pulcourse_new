@@ -231,3 +231,10 @@ body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
 /* 목적 카드의 모듈 목록(메뉴 교환 · 한 달 식단 등)은 보이지 않게 한다.
    요소와 카드 배치 구조는 그대로 두고 높이만 0으로 접는다(삭제했을 때 아이폰에서 터치가 안 된 적이 있어 구조를 바꾸지 않음) */
 .rh-mods{visibility:hidden;height:0;min-height:0;margin:0!important;padding:0!important;border:0!important;overflow:hidden}
+
+/* 언어 바꾸기 링크(한국어 ↔ English) */
+.rh-sheet{position:relative}
+.rh-lang{position:absolute;top:20px;right:24px;padding:6px 14px;border:1px solid #E5E8EB;border-radius:999px;font-size:14px;font-weight:700;color:var(--sub);text-decoration:none;background:#fff}
+.rh-lang:hover{border-color:#B0B8C1;color:var(--text)}
+body.mobile .rh-lang{top:12px;right:14px;padding:4px 11px;font-size:12px}
+body.mobile .rh-head .logo-partnership{margin-top:26px}

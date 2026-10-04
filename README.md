@@ -1,3 +1,5 @@
+**한국어** | [English](README.en.md)
+
 # 지구를 지키는 점심 선택
 
 구내식당 점심 메뉴의 CO₂e(온실가스 배출량)를 메뉴 이름으로 계산해 보여 주는 웹페이지입니다.
@@ -5,7 +7,7 @@
 
 다른 학교·기관·회사도 같은 방식으로 만들 수 있도록 코드, 공개 데이터, 제작 문서를 함께 공개합니다.
 
-**[사이트 열기 →](https://andyson114.github.io/pulcourse_new/)**
+**[사이트 열기 →](https://andyson114.github.io/pulcourse_new/)** · [English site](https://andyson114.github.io/pulcourse_new/en/)
 
 ## 사용 목적별 구성
 
@@ -80,6 +82,21 @@ python3 tools/verify.py before.html index.html
 
 계산 데이터 가운데 레시피 분량처럼 공개하지 않은 부분은 직접 준비해야 합니다. 필요한 형식과 최소 구성은 [데이터 설명서](docs/DATA.md)에, 전체 순서는 [제작 가이드](docs/BUILD_GUIDE.md)에 있습니다.
 
+## 영어판
+
+같은 계산 엔진과 데이터로 만든 영어판이 따로 있습니다. 첫 화면 오른쪽 위의 English / 한국어 링크로 서로 오갈 수 있습니다.
+
+- `en/index.html`: 영어판 앱(단일 파일). `/pulcourse_new/en/` 주소로 열립니다.
+- `src/build-en/`: 번역한 조각만 둡니다(`shell.html`, `app.bundle.js`, `rolehub.js`, `rolehub.css`). 글꼴·그림·`restaurant.svg`는 `src/build/`의 것을 함께 씁니다.
+- 계산 데이터와 `data/`는 한국어 그대로입니다. 화면에 보이는 메뉴·재료 이름은 `src/build-en/app.bundle.js` 맨 앞의 영어 이름 사전(`EN_NAMES`)으로 바꿔 보여 주고, 사전에 없는 이름은 한국어로 나옵니다.
+- 데이터 파일, 데이터 설명서(`docs/DATA.md`), 출처 문헌 제목(S001~S015)은 한국어로만 둡니다.
+
+```bash
+python3 tools/pack.py src/build-en en/index.html --payload my_payload.json --base src/build
+```
+
+영어 문서: [README.en.md](README.en.md) · [제작 가이드](docs/BUILD_GUIDE.en.md) · [계산 방법](docs/METHODOLOGY.en.md) · [NOTICE](NOTICE.en.md)
+
 ## 데이터 공개 범위
 
 | 구분 | 항목 | 출처 |
@@ -93,7 +110,7 @@ python3 tools/verify.py before.html index.html
 
 | 대상 | 조건 |
 |---|---|
-| 코드 (`index.html`의 스크립트, `src/`, `tools/`) | [MIT](LICENSE) |
+| 코드 (`index.html`·`en/index.html`의 스크립트, `src/`, `tools/`) | [MIT](LICENSE) |
 | 데이터·문서 (`data/`, `docs/`) | [CC BY 4.0](LICENSE-DATA.md) — 출처를 밝히면 자유롭게 사용 |
 | 글꼴 (Noto Sans KR) | [SIL OFL 1.1](src/build/fonts/OFL.txt) |
 | 기관·기업 로고 | 각 소유자의 표장으로 라이선스 대상 아님 |
@@ -104,10 +121,13 @@ python3 tools/verify.py before.html index.html
 
 ```
 index.html              앱 전체(단일 파일) — GitHub Pages로 배포
+en/index.html           영어판 앱(단일 파일) — /pulcourse_new/en/
 docs/                   제작 가이드·데이터 설명서·계산 방법, 흐름도(SVG)
 data/                   공개 데이터(JSON·CSV)와 목록(MANIFEST.json)
 src/build/              index.html을 푼 조각(뼈대·코드·글꼴·그림)
+src/build-en/           영어판에서 번역한 조각(글꼴·그림은 src/build/ 것을 씀)
 src/readable/           읽기용 코드(engine·dash·app)
 tools/                  풀기·묶기·비교·데이터 내보내기 도구
 LICENSE, LICENSE-DATA.md, NOTICE.md
+*.en.md, docs/*.en.svg  영어 문서와 영어 흐름도
 ```
