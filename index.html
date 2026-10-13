@@ -267,11 +267,14 @@ body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
 body.mobile .rh-lang{top:12px;right:14px;padding:4px 11px;font-size:12px}
 body.mobile .rh-head .logo-partnership{margin-top:26px}
 
-/* 한국어판 첫 화면: 작은 안내 글씨 숨김(제목·목적 칩·카드 이름만 남김). 구조는 그대로 두고 화면에서만 숨긴다 */
+/* 한국어판 첫 화면: 제목 아래 안내와 전체 보기 설명은 숨기고, 카드 설명은 한 줄로 줄여 이름 아래 가운데에 둔다. 박스 크기는 예전과 같게(카드 199px, 전체 보기 78px·폰 87px) */
 html[lang="ko"] .rh-head p,
-html[lang="ko"] .rh-desc,
 html[lang="ko"] .rh-all-t small{display:none}
+html[lang="ko"] body:not(.mobile) .rh-desc{text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:clamp(13px,1.2vw,16px);min-height:48px}
 html[lang="ko"] .rh-all-t{flex:1}
+html[lang="ko"] body:not(.mobile) .rh-all{min-height:78px}
+html[lang="ko"] body.mobile .rh-all{min-height:87px}
+html[lang="ko"] body:not(.mobile) .rh-who{text-align:center}
 </style>
 <style id="road-motion-fix">
 /* Keep the road itself fixed and move only its repeating lane pattern left. */
@@ -413,9 +416,9 @@ if (matchMedia("(max-width: 900px) and (orientation: portrait), (max-height: 540
 <p>어떤 목적으로 사용하시나요?<br class="rh-mbr"> 고르신 목적에 맞는 화면으로 안내해 드려요.</p>
 </div>
 <div class="rh-cards">
-<button class="rh-card" data-role="nutri" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🥗</span><span class="rh-purpose">식단 설계</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">영양사용</b><span class="rh-desc">메뉴를 바꾸면 CO₂e가 얼마나 줄어드는지 보고, 한 달 식단을 짜 봐요.</span><span class="rh-mods"><span><i>1</i>메뉴 교환</span><span><i>2</i>한 달 식단</span></span></button>
-<button class="rh-card" data-role="corp" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🏢</span><span class="rh-purpose">성과 관리</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">기업·운영사용</b><span class="rh-desc">우리 식당의 한 달 식단과 1년 CO₂e 절감 효과를 한눈에 봐요.</span><span class="rh-mods"><span><i>1</i>한 달 식단</span><span><i>2</i>대시보드</span></span></button>
-<button class="rh-card" data-role="user" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🙋</span><span class="rh-purpose">환경 교육</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">소비자용</b><span class="rh-desc">오늘 점심을 골라 보며 내 선택이 지구에 주는 영향을 알아봐요.</span><span class="rh-mods"><span><i>1</i>교육 모듈</span></span></button>
+<button class="rh-card" data-role="nutri" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🥗</span><span class="rh-purpose">식단 설계</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">영양사용</b><span class="rh-desc">메뉴를 바꿔 보고 한 달 식단을 짜 봐요</span><span class="rh-mods"><span><i>1</i>메뉴 교환</span><span><i>2</i>한 달 식단</span></span></button>
+<button class="rh-card" data-role="corp" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🏢</span><span class="rh-purpose">성과 관리</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">기업·운영사용</b><span class="rh-desc">한 달 식단과 1년 CO₂e 절감을 한눈에</span><span class="rh-mods"><span><i>1</i>한 달 식단</span><span><i>2</i>대시보드</span></span></button>
+<button class="rh-card" data-role="user" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🙋</span><span class="rh-purpose">환경 교육</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">소비자용</b><span class="rh-desc">내 점심이 지구에 주는 영향을 알아봐요</span><span class="rh-mods"><span><i>1</i>교육 모듈</span></span></button>
 </div>
 <button class="rh-all" data-role="all" type="button"><span class="rh-ic" aria-hidden="true">📂</span><span class="rh-all-t"><b>전체 보기</b><small>교육 모듈과 대시보드를 모두 봐요 · 기존 화면 그대로</small></span><span class="rh-go" aria-hidden="true">›</span></button>
 </div>
