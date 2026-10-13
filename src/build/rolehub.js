@@ -14,7 +14,7 @@ window.RoleHub = (function () {
   const ROLES = {
     nutri: { name: "식단 설계", who: "영양사용", hub: true, tabs: ["compare", "month", "detail", "method"], label: { compare: "메뉴 교환" }, map: { sim: "month", board: "month" } },
     corp: { name: "성과 관리", who: "기업·운영사용", hub: true, tabs: ["month", "board", "detail", "method"], map: { sim: "board", compare: "detail" } },
-    user: { name: "환경 교육", who: "이용자용", hub: false, tabs: ["detail", "sim", "method"], map: { compare: "detail", month: "sim", board: "sim" } },
+    user: { name: "환경 교육", who: "소비자용", hub: false, tabs: ["detail", "sim", "method"], map: { compare: "detail", month: "sim", board: "sim" } },
     all: { name: "전체 보기", who: "", hub: false, tabs: ["detail", "compare", "sim", "method"], map: { month: "sim", board: "sim" } }
   };
 
@@ -48,7 +48,7 @@ window.RoleHub = (function () {
   /* ── 목적 배지 ───────────────────────────── */
   function badges() {
     const R = ROLES[role];
-    // 교육 화면: "이용자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
+    // 교육 화면: "소비자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
     const html = {
       "#rhBadgeStory": R ? `<b class="rh-role">${esc(R.who || R.name)}</b>목적 바꾸기` : "",
       "#rhBadgeDash": R && R.hub ? "목적 바꾸기" : R ? `<b class="rh-role">${esc(R.who || R.name)}</b>목적 바꾸기` : ""
@@ -88,7 +88,7 @@ window.RoleHub = (function () {
       Object.assign(S.tt, S.et); S.gt();
     } else {
       if (Dash.isOpen()) Dash.close();
-      const S = Dash._sim;                 // 이용자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
+      const S = Dash._sim;                 // 소비자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
       if (S.tt.beef !== undefined) Object.assign(S.tt, S.st);
       $("#rhRestart").click();       // 교육 체험을 처음(입장)부터
     }

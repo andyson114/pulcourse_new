@@ -48,7 +48,7 @@ window.RoleHub = (function () {
   /* ── 목적 배지 ───────────────────────────── */
   function badges() {
     const R = ROLES[role];
-    // 교육 화면: "이용자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
+    // 교육 화면: "소비자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
     const html = {
       "#rhBadgeStory": R ? `<b class="rh-role">${esc(R.who || R.name)}</b>Change purpose` : "",
       "#rhBadgeDash": R && R.hub ? "Change purpose" : R ? `<b class="rh-role">${esc(R.who || R.name)}</b>Change purpose` : ""
@@ -88,7 +88,7 @@ window.RoleHub = (function () {
       Object.assign(S.tt, S.et); S.gt();
     } else {
       if (Dash.isOpen()) Dash.close();
-      const S = Dash._sim;                 // 이용자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
+      const S = Dash._sim;                 // 소비자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
       if (S.tt.beef !== undefined) Object.assign(S.tt, S.st);
       $("#rhRestart").click();       // 교육 체험을 처음(입장)부터
     }

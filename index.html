@@ -2,7 +2,7 @@
 <!--
 지구를 지키는 점심 선택 — 풀무원 구내식당 CO₂e 교육 페이지 (단일 HTML)
 ■ 통합판(260929): 첫 화면에서 사용 목적을 고르면 그 목적에 맞는 모듈만 보여요.
-  식단 설계(영양사) = 메뉴 교환 · 한 달 식단 / 성과 관리(기업) = 한 달 식단 · 대시보드 / 환경 교육(이용자) = 교육 모듈 / 전체 보기 = 기존과 같음
+  식단 설계(영양사) = 메뉴 교환 · 한 달 식단 / 성과 관리(기업) = 한 달 식단 · 대시보드 / 환경 교육(소비자) = 교육 모듈 / 전체 보기 = 기존과 같음
   (메뉴별 CO₂e 비교 · 어떻게 계산하나요? 는 모든 목적 공통)
 ■ 오늘 식단표 메뉴로 바꿔서 열기
 index.html?a=김치볶음밥&b=순두부찌개&d=9월%2021일
@@ -409,7 +409,7 @@ if (matchMedia("(max-width: 900px) and (orientation: portrait), (max-height: 540
 <div class="rh-cards">
 <button class="rh-card" data-role="nutri" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🥗</span><span class="rh-purpose">식단 설계</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">영양사용</b><span class="rh-desc">메뉴를 바꾸면 CO₂e가 얼마나 줄어드는지 보고, 한 달 식단을 짜 봐요.</span><span class="rh-mods"><span><i>1</i>메뉴 교환</span><span><i>2</i>한 달 식단</span></span></button>
 <button class="rh-card" data-role="corp" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🏢</span><span class="rh-purpose">성과 관리</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">기업·운영사용</b><span class="rh-desc">우리 식당의 한 달 식단과 1년 CO₂e 절감 효과를 한눈에 봐요.</span><span class="rh-mods"><span><i>1</i>한 달 식단</span><span><i>2</i>대시보드</span></span></button>
-<button class="rh-card" data-role="user" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🙋</span><span class="rh-purpose">환경 교육</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">이용자용</b><span class="rh-desc">오늘 점심을 골라 보며 내 선택이 지구에 주는 영향을 알아봐요.</span><span class="rh-mods"><span><i>1</i>교육 모듈</span></span></button>
+<button class="rh-card" data-role="user" type="button"><span class="rh-top"><span class="rh-ic" aria-hidden="true">🙋</span><span class="rh-purpose">환경 교육</span><span class="rh-go" aria-hidden="true">›</span></span><b class="rh-who">소비자용</b><span class="rh-desc">오늘 점심을 골라 보며 내 선택이 지구에 주는 영향을 알아봐요.</span><span class="rh-mods"><span><i>1</i>교육 모듈</span></span></button>
 </div>
 <button class="rh-all" data-role="all" type="button"><span class="rh-ic" aria-hidden="true">📂</span><span class="rh-all-t"><b>전체 보기</b><small>교육 모듈과 대시보드를 모두 봐요 · 기존 화면 그대로</small></span><span class="rh-go" aria-hidden="true">›</span></button>
 </div>
@@ -779,7 +779,7 @@ window.RoleHub = (function () {
   const ROLES = {
     nutri: { name: "식단 설계", who: "영양사용", hub: true, tabs: ["compare", "month", "detail", "method"], label: { compare: "메뉴 교환" }, map: { sim: "month", board: "month" } },
     corp: { name: "성과 관리", who: "기업·운영사용", hub: true, tabs: ["month", "board", "detail", "method"], map: { sim: "board", compare: "detail" } },
-    user: { name: "환경 교육", who: "이용자용", hub: false, tabs: ["detail", "sim", "method"], map: { compare: "detail", month: "sim", board: "sim" } },
+    user: { name: "환경 교육", who: "소비자용", hub: false, tabs: ["detail", "sim", "method"], map: { compare: "detail", month: "sim", board: "sim" } },
     all: { name: "전체 보기", who: "", hub: false, tabs: ["detail", "compare", "sim", "method"], map: { month: "sim", board: "sim" } }
   };
 
@@ -813,7 +813,7 @@ window.RoleHub = (function () {
   /* ── 목적 배지 ───────────────────────────── */
   function badges() {
     const R = ROLES[role];
-    // 교육 화면: "이용자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
+    // 교육 화면: "소비자용 | 목적 바꾸기", 대시보드 머리: "목적 바꾸기"(제목에 목적이 이미 보임)
     const html = {
       "#rhBadgeStory": R ? `<b class="rh-role">${esc(R.who || R.name)}</b>목적 바꾸기` : "",
       "#rhBadgeDash": R && R.hub ? "목적 바꾸기" : R ? `<b class="rh-role">${esc(R.who || R.name)}</b>목적 바꾸기` : ""
@@ -853,7 +853,7 @@ window.RoleHub = (function () {
       Object.assign(S.tt, S.et); S.gt();
     } else {
       if (Dash.isOpen()) Dash.close();
-      const S = Dash._sim;                 // 이용자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
+      const S = Dash._sim;                 // 소비자·전체 보기는 원본 시뮬레이터 초기값(예시 설정)
       if (S.tt.beef !== undefined) Object.assign(S.tt, S.st);
       $("#rhRestart").click();       // 교육 체험을 처음(입장)부터
     }
