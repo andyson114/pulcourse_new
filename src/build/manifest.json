@@ -1,6 +1,6 @@
 {
   "source": "index.html",
-  "source_sha256": "3c533eeecadce192a411487a2ef38a284956240155f88ee3604863d8934de71f",
+  "source_sha256": "4b3a8e61bf834a21613ef0ddd75acb0491eb3339b0c9cb2ce34930b79d9c8080",
   "files": {
     "app.bundle.js": "f0dd8f8875ea88ba0f3370da862c8f4d93feba2b953c427b0742ead07b1bac9b",
     "fonts/f500.woff2": "55e4770d18e5beed738c1effb2a68e18f468f663a14ec2bb4352d57eb79824f0",
@@ -17,7 +17,7 @@
     "assets/fd686e6752.webp": "fd686e6752c1049332a6e02698b9fc1f18f9fbe3f818a108aaf3a1ba10efdc45",
     "assets/804fe002c3.webp": "804fe002c3641f331564f286348811d09c21e10a1dac91395dde1989670f3699",
     "assets/5641ceae4e.webp": "5641ceae4eecbdbab6eec242005a875111d659e2a21b05d45ca85ac5888cf2b7",
-    "shell.html": "2111a35bbe4cbe747a75c80456dd5c341e693879237fc7cae3eae28908637fc3"
+    "shell.html": "3501b859bbfe7098919c4d46ccb3aed499f48ff69ef189c2efaa44e5e3b959eb"
   },
   "note": "payload.json(계산 데이터 전체)은 내부 자료가 포함되어 공개하지 않습니다. 공개 데이터는 data/ 폴더, 형식은 docs/DATA.md 참고."
 }

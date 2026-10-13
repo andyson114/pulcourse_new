@@ -15,9 +15,9 @@ We publish the code, public data and build documents together so that other scho
 
 | Purpose | For | Screens included |
 |---|---|---|
+| Climate Education | diners | Education module |
 | Menu Planning | dietitians | Menu Swap, Monthly Menu |
 | Impact Tracking | companies & operators | Monthly Menu, Dashboard |
-| Climate Education | diners | Education module |
 | View All | everyone | Education module + 4 dashboard tabs (the original screens) |
 
 - Every purpose also includes the 'CO₂e by Menu' and 'How It's Calculated' tabs.
