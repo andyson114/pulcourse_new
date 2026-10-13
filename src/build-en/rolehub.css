@@ -239,6 +239,12 @@ body.mobile .rh-head p{line-height:1.6;letter-spacing:-.01em}
 body.mobile .rh-lang{top:12px;right:14px;padding:4px 11px;font-size:12px}
 body.mobile .rh-head .logo-partnership{margin-top:26px}
 
+/* 한국어판 첫 화면: 작은 안내 글씨 숨김(제목·목적 칩·카드 이름만 남김). 구조는 그대로 두고 화면에서만 숨긴다 */
+html[lang="ko"] .rh-head p,
+html[lang="ko"] .rh-desc,
+html[lang="ko"] .rh-all-t small{display:none}
+html[lang="ko"] .rh-all-t{flex:1}
+
 /* ── English version: layout adjustments for longer Latin text ── */
 .rh-who{font-size:24px;letter-spacing:-.01em}
 .rh-purpose{white-space:nowrap}

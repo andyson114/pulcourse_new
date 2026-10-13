@@ -1,13 +1,13 @@
 {
   "source": "index.html",
-  "source_sha256": "194adf977be615ff0ffdeca45c7741478e003edd7f4f1d673a24ae1e019e2b36",
+  "source_sha256": "b6c2cde9b05ed508fb7a954bb8ca1c501365de3a015413771a2f172a18b0a3c3",
   "files": {
     "app.bundle.js": "f0dd8f8875ea88ba0f3370da862c8f4d93feba2b953c427b0742ead07b1bac9b",
     "fonts/f500.woff2": "55e4770d18e5beed738c1effb2a68e18f468f663a14ec2bb4352d57eb79824f0",
     "fonts/f700.woff2": "581d0ecbd392c365cd2e8f31b34c36967cef7bddab9a80d840fcfebc54762fb9",
     "fonts/f900.woff2": "634de76ced64d4964582f706f1a44d818dc646bc7df000557a16f93790b584cf",
     "restaurant.svg": "48f97644dde1d981f3b4565a7675eb1e9130c02cf23b2489a867790e49cc26c7",
-    "rolehub.css": "cb0ce7014f60739bcdc5873b07fb0fe55c2ecbfa74f7119c12b9ed0404416804",
+    "rolehub.css": "751bcb354ee3188e98f32eb5931cb640a598766ae27781ed11f4d1a5347c9410",
     "rolehub.js": "f839e167bc5668e5852a8af295c810cf4c37f9b2d356bda7b5f3c1d1113fbd27",
     "assets/b2d0fe5dcf.png": "b2d0fe5dcfb8289ef1c50c3c169b6af4b1915e6188b56b9fc2d485c0934b9e73",
     "assets/1ec47fcdad.png": "1ec47fcdad520b13e065814153c768e7b0e35cf262666b9da59a6fd87d34c6dd",
